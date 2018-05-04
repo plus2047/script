@@ -1,0 +1,44 @@
+#从张骁服务器上抄来的配置文件，存在本地
+#set coding
+#defencoding GBK
+#encoding UTF-8 GBK
+#see the startup message
+startup_message off
+term linux
+##use ` as the Global Key
+### escape ``
+###set a biger buffer
+defscrollback 409600
+##设置状态栏
+hardstatus alwayslastline
+shelltitle "$|bash"
+# 无时间版本
+hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F1)<- (F2)-> (F8)rename (F9)detach (F10)new %{kg}]'
+# 带时间/bash序列/按键说明
+#hardstatus string '%{= kG}[ %Y/%m/%d %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F1)Prev (F2)Next (F8)Screen (F9)Title (F10)Detach %{kg}]'
+# a short version, can use C-a
+#hardstatus string '%{= kg}[ %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{g}][%{kG} %D %Y/%m/%d %{g}]'
+###shutdown the noise
+vbell off
+#
+### w to show the window list
+bind w windowlist -b
+bind ^w windowlist -b
+###initial apps to run
+#screen -t compile 0
+#screen -t build   1
+#screen -t package 2
+#screen -t tmp     3
+#screen -t test    4
+#select 0
+#
+#进行快捷键的绑定
+bindkey -k k1 prev
+bindkey -k k2 next
+bindkey -k k4 quit
+bindkey -k k; screen
+bindkey -k k8 title
+bindkey -k k9 detach
+# attrcolor u "-u B"
+autodetach on 
+
