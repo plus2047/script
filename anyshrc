@@ -7,7 +7,6 @@ export PATH="$SD:$BD:$PATH"
 # proxy
 alias setproxy='source $SD/proxy.sh 1087'
 alias unsetproxy='source $SD/proxy.sh unset'
-# setproxy
 
 alias gw='its -u 1701214108 -p answer2017'
 
@@ -29,4 +28,7 @@ maxim.py
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
         if [ -z "$STY" ]; then screen -R -d; fi
 fi
+
+# set homebrew update source
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 

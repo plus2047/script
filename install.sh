@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 SD=`dirname "$0"`
 SD=`realpath $SD`
 PWD=`pwd`
@@ -31,7 +33,7 @@ mkdir $HOME/.ssh &> /dev/null
 chmod 700 $HOME/.ssh
 _C=$HOME/.ssh/config
 _A=$HOME/.ssh/authorized_keys
-_TS=`date +"_%y%m%d"
+_TS=`date +"_%y%m%d"`
 if [ -e $_C -a ! -e $_C$_TS ]
 then
     mv $_C $_C$_TS
