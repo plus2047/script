@@ -31,4 +31,4 @@ fi
 
 # set homebrew update source
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
-
+export PATH=$PATH:/usr/local/sbin
