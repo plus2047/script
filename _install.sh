@@ -19,10 +19,10 @@ fi
 
 # install config files.
 # screenrc
-ln -Fs $SD/screenrc $HOME/.screenrc
-ln -Fs $SD/vimrc $HOME/.vimrc
+ln -Fs $SD/config/screenrc $HOME/.screenrc
+ln -Fs $SD/config/vimrc $HOME/.vimrc
 # zshrc
-SHCMD="source $SD/anyshrc"
+SHCMD="source $SD/config/anyshrc"
 TAIL=`tail -1 $HOME/.zshrc`
 if [ ! "$TAIL" == "$SHCMD" ]
 then

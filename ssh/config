@@ -3,26 +3,6 @@ host ws
     port 22
     user plus
 
-host alpha
-    hostname 47.94.43.158
-    port 22
-    user zhangxiao 
-
-host ax
-    hostname 47.94.43.158
-    port 22
-    user xujiahao 
-
-host beta 
-    hostname 39.106.250.6
-    port 22
-    user zhangxiao 
-
-host sws
-    hostname 162.105.92.96
-    port 2222
-    user plus
-
 host swslocal
     hostname 192.168.1.100
     port 22

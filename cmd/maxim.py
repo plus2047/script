@@ -9,6 +9,8 @@ maxim_list = [
         "It is not uncommon for people to spend their whole life waiting to start living.",
         "Everybody comes to a point in their life when they want to quit, "
         "but it's what you do at that moment that determines who you are.",
+        "Forget the mistakes of the past and press on to "
+        "the greater achievements of the future.",
         ]
 
 import random

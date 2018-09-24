@@ -1,4 +1,4 @@
-SD="$HOME/script"
+SD="$HOME/script/cmd"
 BD="$HOME/bin"
 
 # path
@@ -8,27 +8,35 @@ export PATH="$SD:$BD:$PATH"
 alias setproxy='source $SD/proxy.sh 1087'
 alias unsetproxy='source $SD/proxy.sh unset'
 
-alias gw='its -u 1701214108 -p answer2017'
-
-# ssh alias
-# alias ssha="ssh -t alpha 'bash --rcfile ~/.bashrcX'"
-# alias sshb="ssh -t beta 'bash --rcfile ~/.bashrcX'"
-alias sshw="mosh ws"
-
-# mount alias
-# alias mountws="sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 ws:/home/plus ~/wsfs"
-
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# trash system
+trash_path=$HOME/.Trash/
+if [ ! -d $trash_path ]; then
+    mkdir -p $trash_path
+fi
+alias rm=trash
+trash()
+{
+    _TS=`date +"_%y%m%d_%H%M%S"`
+    for file in $@; do
+        mv ${file} ${trash_path}${file}${_TS}
+    done
+    # mv $@ $trash_path
+}
 
 # random print maxim
 maxim.py
 
 # if ssh in, open screen.
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
-        if [ -z "$STY" ]; then screen -R -d; fi
+    if [ -z "$STY" ]; then screen -R -d; fi
 fi
 
 # set homebrew update source
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+# set path
 export PATH=$PATH:/usr/local/sbin
+
