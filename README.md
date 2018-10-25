@@ -1,15 +1,9 @@
-Persional system config scripts.
+Persional config scripts.
 
 ## Install
 
 Run:
 
-    ./install.sh
+    ./_install.sh
 
-This script will config:
-
-- `zsh & oh-my-zsh`
-- `vim`
-- `screen`
-- `ssh` public key & config
 

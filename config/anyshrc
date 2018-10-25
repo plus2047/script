@@ -2,8 +2,7 @@ SD="$HOME/script/cmd"
 BD="$HOME/bin"
 
 # path
-export PATH="$SD:$BD:$PATH"
-
+export PATH="/usr/local/sbin:$SD:$BD:$PATH"
 # proxy
 alias setproxy='source $SD/proxy.sh 1087'
 alias unsetproxy='source $SD/proxy.sh unset'
@@ -21,7 +20,7 @@ trash()
 {
     _TS=`date +"_%y%m%d_%H%M%S"`
     for file in $@; do
-        mv ${file} ${trash_path}${file}${_TS}
+        mv ${file} ${trash_path}$(basename ${file})${_TS}
     done
     # mv $@ $trash_path
 }

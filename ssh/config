@@ -3,7 +3,3 @@ host ws
     port 22
     user plus
 
-host swslocal
-    hostname 192.168.1.100
-    port 22
-    user plus
