@@ -2,13 +2,11 @@ SD="$HOME/script/cmd"
 BD="$HOME/bin"
 
 # path
-export PATH="/usr/local/sbin:$SD:$BD:$PATH"
+export PATH="$SD:$BD:$PATH:/usr/local/sbin"
+
 # proxy
 alias setproxy='source $SD/proxy.sh 1087'
 alias unsetproxy='source $SD/proxy.sh unset'
-
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # trash system
 trash_path=$HOME/.Trash/
@@ -16,26 +14,30 @@ if [ ! -d $trash_path ]; then
     mkdir -p $trash_path
 fi
 alias rm=trash
-trash()
-{
+trash() {
     _TS=`date +"_%y%m%d_%H%M%S"`
-    for file in $@; do
-        mv ${file} ${trash_path}$(basename ${file})${_TS}
+    for file in $@
+    do    
+        f=$(basename ${file})
+        if [ "${f:0:1}" = '.' ]
+        then
+            f=${f:1}
+        fi
+        mv ${file} ${trash_path}${f}${_TS}
     done
-    # mv $@ $trash_path
 }
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # random print maxim
 maxim.py
 
 # if ssh in, open screen.
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
-    if [ -z "$STY" ]; then screen -R -d; fi
-fi
+# if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
+#     if [ -z "$STY" ]; then screen -R -d; fi
+# fi
 
 # set homebrew update source
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
-
-# set path
-export PATH=$PATH:/usr/local/sbin
 

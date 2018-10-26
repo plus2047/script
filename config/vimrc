@@ -75,6 +75,8 @@ nmap <leader>w :w!<cr>
 " :W sudo saves the file 
 command W w !sudo tee % > /dev/null
 
+nnoremap <leader>p :set paste!<cr>
+
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
@@ -87,6 +89,8 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 inoremap <C-b> <C-o>b
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>^
 
 " foldmethod
 set foldmethod=indent   

@@ -1,47 +1,65 @@
-# Copy from Zhang Xiao :)
+autodetach on         # autodetach on disconnect/close
+startup_message off   # disable intro msg
+defscrollback 80000   # default scrollback buffer
+vbell off             # enable visual bell
 
-# set coding
-# defencoding GBK
-# encoding UTF-8 GBK
+escape ``              # replace C- escape sequence
+#escape `e             # double-tap backtick toggles screen windows
+# reset escape key to the default
+#escape ^Aa
 
-# if see the startup message
+# auxiliary register
+register S ^A
+
+# Alt + x produces ^A and acts as an escape key
+#bindkey "^[x" process S
+
+# Window numbering starts at 1
+bind c screen 1
+bind 0 select 10
+
+# load some apps (last listed will be focused)
+#screen -t shell    3
+#screen -t ncmpc    4  ncmpc
+#screen -t rtorrent 5  rtorrent
+#screen -t htop     10  htop
+#screen -t shell    2
+#screen -t shell    1
+
+defflow off           # disable flow control
+nethack on            # nethackish status messages
+altscreen on          # restore window contents after a vi session
+# term screen-256color
+# terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# termcapinfo rxvt* ti@:te@
+
+hardstatus string "%h"
+caption always "%{= kw} %-w%{= wk}%n*%t%{-}%+w%{= kw} %=%d %M %0c %{g}%H%{-}"
+
+backtick 1 5 5 true
+# termcapinfo rxvt* 'hs:ts=\E]2;:fs=\007:ds=\E]2;\007'
+hardstatus string "screen (%n: %t)"
+caption string "%{= kw}%Y-%m-%d;%c %{= kw}%-Lw%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+Lw%1`"
+caption always
+
 startup_message off
-term linux
-# shutdown the noise
-vbell off
-# w to show the window list
-bind w windowlist -b
-bind ^w windowlist -b
-# use ` as the Global Key
-# escape ``
 
-# set a biger buffer
-defscrollback 409600
+bind 'K' kill
+bind 'W' windowlist
+# bind 'V' split -v
 
-# set status bar
-hardstatus alwayslastline
-shelltitle "$|bash"
-# simple version without time
-hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F1)<- (F2)-> (F8)rename (F9)detach (F10)new %{kg}]'
-# more info
-# hardstatus string '%{= kG}[ %Y/%m/%d %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F1)Prev (F2)Next (F8)Screen (F9)Title (F10)Detach %{kg}]'
-# a short version, can use C-a
-# hardstatus string '%{= kg}[ %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{g}][%{kG} %D %Y/%m/%d %{g}]'
-# bind hotkey
-bindkey -k k1 prev
-bindkey -k k2 next
-bindkey -k k4 quit
-bindkey -k k; screen
-bindkey -k k8 title
-bindkey -k k9 detach
-# attrcolor u "-u B"
-autodetach on 
+# F8 to turn the status bar off
+#bindkey -k k8 hardstatus alwayslastline
+# F9 to turn the status bar on
+#bindkey -k k9 hardstatus alwaysignore
+# F5 and F6 to move one screen forward or backward
+#bind F7 to change focus
+bindkey -k k7 focus up
+bindkey -k k8 focus left
+bindkey -k k5 prev
+bindkey -k k6 next
 
-# initial apps to run
-# screen -t compile 0
-# screen -t build   1
-# screen -t package 2
-# screen -t tmp     3
-# screen -t test    4
-# select 0
-
+bind c screen 1
+bind ^c screen 1
+screen 1
+shell -$SHELL
