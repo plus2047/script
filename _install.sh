@@ -18,7 +18,9 @@ PWD=`pwd`
 # fi
 
 # install config files.
-# screenrc
+_TS=`date +"_%y%m%d"`
+mv $HOME/.screenrc $HOME/.screenrc$_TS &> /dev/null
+mv $HOME/.vimrc $HOME/.vimrc$_TS &> /dev/null
 ln -Fs $SD/config/screenrc $HOME/.screenrc
 ln -Fs $SD/config/vimrc $HOME/.vimrc
 # zshrc
@@ -29,22 +31,22 @@ then
     echo $SHCMD >> $HOME/.zshrc
 fi
 # ssh: install public key & config but not install private key.
-mkdir $HOME/.ssh &> /dev/null
-chmod 700 $HOME/.ssh
-_C=$HOME/.ssh/config
-_A=$HOME/.ssh/authorized_keys
-_TS=`date +"_%y%m%d"`
-if [ -e $_C -a ! -e $_C$_TS ]
-then
-    mv $_C $_C$_TS
-fi
-if [ -e $_A -a ! -e $_A$_TS ]
-then
-    mv $_A $_A$_TS
-fi
-cp $SD/ssh/id_rsa.pub  $_A
-cp $SD/ssh/config $_C
-chmod 644 $_C $_A
+# mkdir $HOME/.ssh &> /dev/null
+# chmod 700 $HOME/.ssh
+# _C=$HOME/.ssh/config
+# _A=$HOME/.ssh/authorized_keys
+# _TS=`date +"_%y%m%d"`
+# if [ -e $_C -a ! -e $_C$_TS ]
+# then
+#     mv $_C $_C$_TS
+# fi
+# if [ -e $_A -a ! -e $_A$_TS ]
+# then
+#     mv $_A $_A$_TS
+# fi
+# cp $SD/ssh/id_rsa.pub  $_A
+# cp $SD/ssh/config $_C
+# chmod 644 $_C $_A
 
 # return to origin dir.
 cd $PWD

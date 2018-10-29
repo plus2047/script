@@ -72,8 +72,10 @@ let mapleader = ";"
 
 " Fast saving
 nmap <leader>w :w!<cr>
-" :W sudo saves the file 
-command W w !sudo tee % > /dev/null
+" sudo saves the file 
+nmap <leader>W :!sudo tee % > /dev/null
+" quick close
+nmap <leader>c :w\|bd<cr>
 
 nnoremap <leader>p :set paste!<cr>
 
@@ -115,3 +117,7 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+" autoreload vimrc after change
+autocmd! bufwritepost .vimrc source %
+
