@@ -86,7 +86,8 @@ map 0 ^
 map <silent> <leader><cr> :noh<cr>
 
 " use Ctrl-key in insert mode for navigate
-inoremap <C-h> <C-o>h
+" donot try to remap <C-h>, sometimes it's <backspace>.
+" inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
