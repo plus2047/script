@@ -7,7 +7,7 @@ set fileformat=unix
 
 set history=512
 set wildmenu
-set wildmode=longest:full,full
+set wildmode=longest,full
 set showcmd
 
 set number
@@ -24,6 +24,11 @@ set smartindent
 set cindent
 set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,],b
+
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [POS=%l,%v][%p%%]
 set laststatus=2
@@ -52,16 +57,21 @@ set autowriteall
 set clipboard+=unnamed
 set autoread
 
+" jump to the last position when reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
+
 " autoreload vimrc after it change
-" this note work if your vimrc is a symbol link.
-" autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost .vimrc source %
 
 syntax on
 filetype on
 filetype plugin on
 filetype indent on
 
-" function for setting tab for auto complete
+" set tab for auto complete
 function! InsertTabWrapper()
     let col = col('.') - 1
     if !col || getline('.')[col - 1] !~ '\k'
@@ -72,25 +82,29 @@ function! InsertTabWrapper()
 endfunction
 set completeopt=longest,menuone
 
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-
-" jump to the last position when reopening a file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal! g'\"" | endif
-endif
-
 " persional shortcuts ==========
 
-nnoremap <space> :
-inoremap jj <esc>
+" use Ctrl-key in insert mode for navigate
+" donot try to remap <C-h>, sometimes it's <backspace>.
+" inoremap <C-j> <C-o>j
+" inoremap <C-k> <C-o>k
+" inoremap <C-l> <C-o>l
+" inoremap <C-b> <C-o>b
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>^
 
+inoremap jj <esc>
 inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
 
-inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>^
+nnoremap 0 ^
+nnoremap <backspace> X
+
+let mapleader = " "
+nnoremap <leader><cr> :noh<cr>
+nnoremap <leader>p :set paste!<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :wq<cr>
+" sudo saves the file 
+nnoremap <leader>W :!sudo tee % > /dev/null
 

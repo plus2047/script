@@ -2,7 +2,6 @@
   "workbench.activityBar.visible": false,
   "files.autoSave": "onFocusChange",
   "editor.fontSize": 14,
-  "editor.acceptSuggestionOnEnter": "off",
   
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -19,5 +18,7 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["Z", "Z"], "commands": [":wq"] },
     { "before": ["<space>"], "after": [":"]}
-  ]
+  ],
+  "python.jediEnabled": false,
+  "python.linting.pylintEnabled": true
 }
