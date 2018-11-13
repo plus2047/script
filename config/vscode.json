@@ -1,0 +1,23 @@
+{
+  "workbench.activityBar.visible": false,
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "editor.acceptSuggestionOnEnter": "off",
+  
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.whichwrap": "<,>,h,l,[,],b",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-e>": false
+  },
+  "vim.insertModeKeyBindings": [ 
+      { "before": ["j", "j"], "after": ["<Esc>"] }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["Z", "Z"], "commands": [":wq"] },
+    { "before": ["<space>"], "after": [":"]}
+  ]
+}
