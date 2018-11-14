@@ -8,6 +8,7 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.whichwrap": "<,>,h,l,[,],b",
+  "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-e>": false
@@ -17,7 +18,10 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["Z", "Z"], "commands": [":wq"] },
-    { "before": ["<space>"], "after": [":"]}
+    { "before": ["0"], "after":["^"] },
+    { "before": ["<leader>", "<cr>"], "commands":[":noh"]},
+    { "before": ["<leader>", "w"], "commands":[":w"]},
+    { "before": ["<leader>", "q"], "commands": [":wq"]}
   ],
   "python.jediEnabled": false,
   "python.linting.pylintEnabled": true

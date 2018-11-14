@@ -84,27 +84,24 @@ set completeopt=longest,menuone
 
 " persional shortcuts ==========
 
+" special
+inoremap <expr> <tab> InsertTabWrapper()
+" sudo saves the file 
+nnoremap <leader>W :!sudo tee % > /dev/null
+
+" general
 " use Ctrl-key in insert mode for navigate
 " donot try to remap <C-h>, sometimes it's <backspace>.
-" inoremap <C-j> <C-o>j
-" inoremap <C-k> <C-o>k
-" inoremap <C-l> <C-o>l
-" inoremap <C-b> <C-o>b
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
 
 inoremap jj <esc>
-inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
-
 nnoremap 0 ^
-nnoremap <backspace> X
 
 let mapleader = " "
 nnoremap <leader><cr> :noh<cr>
 nnoremap <leader>p :set paste!<cr>
+nnoremap <leader>n :set number!<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :wq<cr>
-" sudo saves the file 
-nnoremap <leader>W :!sudo tee % > /dev/null
-
