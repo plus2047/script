@@ -33,10 +33,10 @@ trash() {
 # random print maxim
 maxim.py
 
-# if ssh in, open screen.
-# if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
-#     if [ -z "$STY" ]; then screen -R -d; fi
-# fi
+if ssh in, open screen.
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
+    if [ -z "$STY" ]; then screen -R -d; fi
+fi
 
 # set homebrew update source
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
