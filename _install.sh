@@ -4,18 +4,18 @@ SD=`dirname "$0"`
 SD=`realpath $SD`
 PWD=`pwd`
 
-# echo "need sodo permission for apt."
-# sudo echo "sudo ready"
-# 
-# # zsh & oh-my-zsh
-# if [ ! -x `command -v zsh` ]
-# then
-#     sudo apt install zsh
-# fi
-# if [ ! -d "$HOME/.oh-my-zsh" ] 
-# then
-#     sh -c $(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
-# fi
+echo "need sodo permission for apt."
+sudo echo "sudo ready"
+
+# zsh & oh-my-zsh
+if [ ! -x `command -v zsh` ]
+then
+    sudo apt install zsh
+fi
+if [ ! -d "$HOME/.oh-my-zsh" ] 
+then
+    sh -c $(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
+fi
 
 # install config files.
 _TS=`date +"_%y%m%d"`
