@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 maxim_list = [
         "Catch the moment",
@@ -11,7 +11,7 @@ maxim_list = [
         "but it's what you do at that moment that determines who you are.",
         "Forget the mistakes of the past and press on to "
         "the greater achievements of the future.",
-        "I am strong because I've been weak. I am fearless because I'vebeen afraid. "
+        "I am strong because I've been weak. I am fearless because I've been afraid. "
         "I am wise because I've been foolish.",
         ]
 

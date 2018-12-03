@@ -32,7 +32,7 @@ trash() {
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # random print maxim
-maxim.py
+maxim.py 2> /dev/null
 
 # if ssh in, open screen.
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
