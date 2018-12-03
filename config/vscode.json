@@ -8,11 +8,12 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.whichwrap": "<,>,h,l,[,],b",
-  "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-e>": false
   },
+
+  "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [ 
       { "before": ["j", "j"], "after": ["<Esc>"] }
   ],
@@ -24,5 +25,7 @@
     { "before": ["<leader>", "q"], "commands": [":wq"]}
   ],
   "python.jediEnabled": false,
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": true,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.colorTheme": "Solarized Light"
 }

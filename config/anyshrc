@@ -3,6 +3,7 @@ BD="$HOME/bin"
 
 # path
 export PATH="$SD:$BD:$PATH:/usr/local/sbin"
+ZSH_THEME="ys"
 
 # proxy
 alias setproxy='source $SD/proxy.sh 1087'
@@ -33,7 +34,7 @@ trash() {
 # random print maxim
 maxim.py
 
-if ssh in, open screen.
+# if ssh in, open screen.
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
     if [ -z "$STY" ]; then screen -R -d; fi
 fi
@@ -41,8 +42,8 @@ fi
 # set homebrew update source
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
-LANG=en_US.UTF-8
-LANGUAGE=en_US.UTF-8
+LANG="en_US.UTF-8"
+LANGUAGE="en_US.UTF-8"
 LC_CTYPE="en_US.UTF-8"
 LC_NUMERIC="en_US.UTF-8"
 LC_TIME="en_US.UTF-8"
@@ -55,4 +56,5 @@ LC_ADDRESS="en_US.UTF-8"
 LC_TELEPHONE="en_US.UTF-8"
 LC_MEASUREMENT="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
-LC_ALL=en_US.UTF-8
+LC_ALL="en_US.UTF-8"
+
