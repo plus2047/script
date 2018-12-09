@@ -1,7 +1,11 @@
 {
   "workbench.activityBar.visible": false,
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "editor.fontSize": 14,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.colorTheme": "Solarized Light",
+  "git.autofetch": true,
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4}",
   
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -12,20 +16,73 @@
     "<C-a>": false,
     "<C-e>": false
   },
-
   "vim.leader": "<space>",
-  "vim.insertModeKeyBindings": [ 
-      { "before": ["j", "j"], "after": ["<Esc>"] }
-  ],
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": [
+  //       "j",
+  //       "j"
+  //     ],
+  //     "after": [
+  //       "<Esc>"
+  //     ]
+  //   }
+  // ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    { "before": ["Z", "Z"], "commands": [":wq"] },
-    { "before": ["0"], "after":["^"] },
-    { "before": ["<leader>", "<cr>"], "commands":[":noh"]},
-    { "before": ["<leader>", "w"], "commands":[":w"]},
-    { "before": ["<leader>", "q"], "commands": [":wq"]}
+    {
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "0"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<cr>"
+      ],
+      "commands": [
+        ":noh"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "<enter>"
+      ],
+      "after": [
+        ":"
+      ]
+    }
   ],
   "python.jediEnabled": false,
   "python.linting.pylintEnabled": true,
-  "workbench.statusBar.feedback.visible": false,
-  "workbench.colorTheme": "Solarized Light"
+  "code-runner.fileDirectoryAsCwd": false,
 }

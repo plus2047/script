@@ -90,7 +90,7 @@ inoremap <expr> <tab> InsertTabWrapper()
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
 
-inoremap jj <esc><esc>
+" inoremap jj <esc><esc>
 nnoremap <cr> :
 
 let mapleader = " "
