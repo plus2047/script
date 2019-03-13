@@ -1,9 +1,7 @@
 #! /usr/bin/env python3
 
 maxim_list = [
-        "Catch the moment",
         "Cool down & All is well ~",
-        "Thinking before coding",
         "JUST DO IT!",
         "Forget all the reasons why it won't work and believe the one reason why it will.", 
         "It is not uncommon for people to spend their whole life waiting to start living.",
