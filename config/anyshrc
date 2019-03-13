@@ -3,7 +3,6 @@ BD="$HOME/bin"
 
 # path
 export PATH="$SD:$BD:$PATH:/usr/local/sbin"
-ZSH_THEME="ys"
 
 # proxy
 alias setproxy='source $SD/proxy.sh 1087'
@@ -32,7 +31,7 @@ trash() {
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # random print maxim
-maxim.py
+# maxim.py
 
 # if ssh in, open screen.
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
@@ -40,7 +39,7 @@ if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
 fi
 
 # set homebrew update source
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 LANG="en_US.UTF-8"
 LANGUAGE="en_US.UTF-8"
