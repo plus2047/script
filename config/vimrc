@@ -23,7 +23,7 @@ set autoindent
 set smartindent
 set cindent
 set backspace=indent,eol,start
-set whichwrap+=<,>,h,l,[,],b
+set whichwrap+=<,>,[,],b
 
 set expandtab
 set tabstop=4
@@ -90,7 +90,7 @@ inoremap <expr> <tab> InsertTabWrapper()
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
 
-" inoremap jj <esc><esc>
+inoremap jj <esc><esc>
 nnoremap <cr> :
 
 let mapleader = " "
