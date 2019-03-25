@@ -20,6 +20,8 @@ hash -r
 # ===== apps =====
 if [ `uname` = "Darwin" ]; then
     brew cask install dozer
+    brew cask install karabiner-elements
+    brew cask install hammerspoon
 fi
 
 # ===== oh-my-zsh =====
