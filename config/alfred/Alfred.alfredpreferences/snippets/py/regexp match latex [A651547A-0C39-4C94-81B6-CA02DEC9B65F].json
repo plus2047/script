@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "md = re.sub(re.compile(r'\\$\\$[\\s\\S]*?\\$\\$', re.MULTILINE), tex_handler, md)\nmd = re.sub(re.compile(r'\\$[\\s\\S]*?\\$', re.MULTILINE), tex_handler, md)\n# ref: https:\/\/stackoverflow.com\/questions\/766372\/python-non-greedy-regexes\n",
+    "uid" : "A651547A-0C39-4C94-81B6-CA02DEC9B65F",
+    "name" : "regexp match latex",
+    "keyword" : "relatex"
+  }
+}

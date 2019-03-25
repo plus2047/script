@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "tar -I pxz -cf archive.tar.gz .",
+    "uid" : "4A8B3A48-0932-440D-B1F0-6133B9F3D0CA",
+    "name" : "tar xz with multiprocessing",
+    "keyword" : "xz"
+  }
+}

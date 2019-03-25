@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%load_ext autoreload\n%autoreload 2\n%matplotlib inline\nimport numpy as np\nimport scipy as sp\nimport scipy.io as sio\nfrom matplotlib import pyplot as plt\nfrom scipy.io import wavfile\nfrom scipy import signal",
+    "uid" : "939B7633-45E4-4282-9F6A-A6B6BB6996C5",
+    "name" : "notebook head",
+    "keyword" : "nbh"
+  }
+}

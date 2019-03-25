@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "class UFSet:\n    def __init__(self, n):\n        self.root_vec = list(range(n))\n    \n    def find(self, x):\n        if self.root_vec[x] != x:\n            self.root_vec[x] = self.find(self.root_vec[x])\n        return self.root_vec[x]\n    \n    def union(self, x, y):\n        self.root_vec[self.find(y)] = self.root_vec[self.find(x)]\n",
+    "uid" : "52CB4CD4-7D03-4E82-93E7-74B719025F8D",
+    "name" : "ufset",
+    "keyword" : "ufset"
+  }
+}

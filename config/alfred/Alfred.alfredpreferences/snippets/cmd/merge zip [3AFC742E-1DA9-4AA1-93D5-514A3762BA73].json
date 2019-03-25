@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "cat filename.z01 filename.zip > filename_full.zip\n",
+    "dontautoexpand" : true,
+    "uid" : "3AFC742E-1DA9-4AA1-93D5-514A3762BA73",
+    "name" : "merge zip",
+    "keyword" : "mergezip"
+  }
+}

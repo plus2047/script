@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#!\/usr\/bin\/env python\n# -*- coding: utf-8 -*-\nfrom __future__ import print_function\nfrom __future__ import division",
+    "uid" : "6192441C-39D5-42A4-A9E7-B03DECD9763C",
+    "name" : "python system script head",
+    "keyword" : "sysh"
+  }
+}

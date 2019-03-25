@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ls -d *\/ | cut -f1 -d'\/'",
+    "uid" : "B80FB5BE-EA68-4DCD-9774-C1B9F7E534E6",
+    "name" : "list only dir",
+    "keyword" : "lsdir"
+  }
+}

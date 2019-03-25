@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from pathlib import Path\np = Path('.\/dir\/hello.tar.gz')\np.is_dir()  # False\np.is_file()  # true\n\np.name  # \"hello.tar.gz\"\np.parents[0]  # \".\/dir\"\np.parents[1]  # \".\"\np.suffix  # \".gz\"\np.suffixes  # [\".tar\", \".tz\"]\np.stem  # \"hello.tar\" # without suffix\np.parts  # [\".\", \"dir\", \"hello.tar.gz\"]\n\np.with_name(\"hi.txt\")  # \".\/dir\/hi.txt\"\np.with_suffix(\".xz\")  # \".\/dir\/hello.tar.xz\"\np.match(\"*.py\")  # false\np.match(\"*.tar.gz\") # true\n\nfor i in p.glob(\"**\/*.gz):\n    print(i.name)\n\nfor i in p.iterdir():\n    print(i.name)\n    \np.mkdir()\np.chmod()\n",
+    "dontautoexpand" : true,
+    "uid" : "57834290-15AC-4FB4-A8A4-4E3DD004FA28",
+    "name" : "pathlib",
+    "keyword" : ""
+  }
+}

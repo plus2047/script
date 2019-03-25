@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "sudo lsof",
+    "uid" : "394EA2C8-572A-40CD-A8F1-6DF3EF60AAA6",
+    "name" : "list opened files",
+    "keyword" : "lsof"
+  }
+}

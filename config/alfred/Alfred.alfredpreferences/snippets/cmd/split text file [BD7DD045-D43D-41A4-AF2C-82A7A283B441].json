@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "split -C 20m --numeric-suffixes input_filename output_prefix  # 按照大小分割\nsplit -l 200000 --numeric-suffixes input_filename output_prefix  # 按照行数分割\n",
+    "dontautoexpand" : true,
+    "uid" : "BD7DD045-D43D-41A4-AF2C-82A7A283B441",
+    "name" : "split text file",
+    "keyword" : "split"
+  }
+}

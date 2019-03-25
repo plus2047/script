@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>65C0FC9A-559F-4A76-8F17-C915A9912610</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>leet</string>
+			<key>text</key>
+			<string>Search LeetCode for {query}</string>
+			<key>url</key>
+			<string>https://leetcode.com/problemset/all/?search={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>8141A1AC-10E4-45D1-8FCD-E944A36ECAC1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>poj</string>
+			<key>text</key>
+			<string>POJ goto</string>
+			<key>url</key>
+			<string>http://poj.org/problem?id={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "- `netstat`\n    - `-a or -l` 所有端口或者仅监听端口\n    - `-n` 以数字方式显示而不尝试解析域名（推荐）\n    - `-p` (Linux, not support macOS) 显示进程、命令\n",
+    "dontautoexpand" : true,
+    "uid" : "99E64A51-BA50-403A-9398-7602C421D1EE",
+    "name" : "netstat",
+    "keyword" : "netstat"
+  }
+}

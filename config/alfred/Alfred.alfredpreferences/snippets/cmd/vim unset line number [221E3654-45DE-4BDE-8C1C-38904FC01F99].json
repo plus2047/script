@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ":set nonu",
+    "dontautoexpand" : true,
+    "uid" : "221E3654-45DE-4BDE-8C1C-38904FC01F99",
+    "name" : "vim unset line number",
+    "keyword" : ""
+  }
+}

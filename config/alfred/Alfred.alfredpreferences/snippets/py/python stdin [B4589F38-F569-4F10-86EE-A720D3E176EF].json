@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "result=$(python <<EOF\nimport sys\nfor line in sys.stdin:\n    print(line)\nEOF\n)\n",
+    "dontautoexpand" : true,
+    "uid" : "B4589F38-F569-4F10-86EE-A720D3E176EF",
+    "name" : "python stdin",
+    "keyword" : ""
+  }
+}

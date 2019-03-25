@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\" set tab for auto complete\nfunction! InsertTabWrapper()\n    let col = col('.') - 1\n    if !col || getline('.')[col - 1] !~ '\\k'\n        return \"\\<tab>\"\n    else\n        return \"\\<c-p>\"\n    endif\nendfunction\nset completeopt=longest,menuone\n\n\" persional shortcuts ==========\n\" sudo saves the file\n\" nnoremap <leader>W :!sudo tee % > \/dev\/null\ninoremap <expr> <tab> InsertTabWrapper()\n\ninoremap <C-e> <C-o>$\ninoremap <C-a> <C-o>^\n\ninoremap jj <esc><esc>\nnnoremap <cr> :\n\nlet mapleader = \" \"\nnnoremap <leader><cr> :noh<cr>\nnnoremap <leader>p :set paste!<cr>\nnnoremap <leader>n :set number!<cr>",
+    "uid" : "8AD8EE0C-1D06-4B64-891F-2725FEAE1B03",
+    "name" : "vim miminal keymap",
+    "keyword" : "vim"
+  }
+}

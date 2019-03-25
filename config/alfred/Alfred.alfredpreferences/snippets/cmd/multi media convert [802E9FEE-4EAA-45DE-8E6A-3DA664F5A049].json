@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# color image to gray image\napt install imagemagick\nconvert source.jpg -colorspace gray destination.jpg\n\n# video to image\n# interval: one second.\nffmpeg -i INPUT.MKV -r 1 -f image2 .\/%4d.jpeg\nffmpeg -i INPUT.MKV -r 1 -vf scale=640x360 .\/%04d.png\n\n# concat\nffmpeg -f concat -i inputs.txt -c copy output.mp4\n# with:\n# inputs.txt =\n# file '\/path\/to\/input1.mp4'\n# file '\/path\/to\/input2.mp4'\n# file '\/path\/to\/input3.mp4'\n\n# flac to wav\nffmpeg -i input.flac output.wav\n\n# resample\nffmpeg -i file1.wav -ar 44100 file1-enc.wav\n\n# split channel\n# for wav file, audio channel should be named as 0.0.0, 0.0.1 ...\nffmpeg -i multichan.wav -map_channel 0.0.0 chan0.wav\nffmpeg -i multichan.wav -map_channel 0.0.1 chan1.wav\n# or\nffmpeg -i multichan.wav -map_channel 0.0.0 chan0.wav -map_channel 0.0.1 chan1.wav\n",
+    "dontautoexpand" : true,
+    "uid" : "802E9FEE-4EAA-45DE-8E6A-3DA664F5A049",
+    "name" : "multi media convert",
+    "keyword" : "ffmpeg"
+  }
+}

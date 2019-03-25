@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "number_list = range(-5, 5)\nless_than_zero = list(filter(lambda x: x < 0, number_list))\nprint(less_than_zero)\n",
+    "dontautoexpand" : true,
+    "uid" : "AE401592-D2CB-478F-8862-24072D4E8391",
+    "name" : "functools filter",
+    "keyword" : ""
+  }
+}

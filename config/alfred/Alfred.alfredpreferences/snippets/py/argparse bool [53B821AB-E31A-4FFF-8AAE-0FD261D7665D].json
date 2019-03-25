@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import argparse\nparser = argparse.ArgumentParser(description=\"Parse bool\")\nparser.add_argument(\"--do-something\", default=False, action=\"store_true\" , help=\"Flag to do something\")\nargs = parser.parse_args()\n\nif args.do_something == True:\n     print(\"Do something\")\nelse:\n     print(\"Don't do something\")\nprint(\"Check that args.do_something=\" + str(args.do_something) + \" is always a bool\")",
+    "dontautoexpand" : true,
+    "uid" : "53B821AB-E31A-4FFF-8AAE-0FD261D7665D",
+    "name" : "argparse bool",
+    "keyword" : ""
+  }
+}

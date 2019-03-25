@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "除了通常步骤之外，需要设置密码和允许非本地访问。\n\n- 命令：`jupyter notebook password` 设置密码。\n- 命令：`jupyter notebook --generate-config` 生成默认配置文件。该命令会给出配置文件路径。\n- 编辑配置文件，搜索关键词 `c.NotebookApp.ip`，取消改行注释，并将该行修改为：`c.NotebookApp.ip = '0.0.0.0'` 该配置即允许从任何 IP 访问 Jupyter Notebook 服务器。\n- 命令 `jupyter notebook --allow-root` 允许以 root 用户启动服务器。",
+    "dontautoexpand" : true,
+    "uid" : "D21D9F21-84C5-496E-9184-FCF98917C9F5",
+    "name" : "jupyter server",
+    "keyword" : ""
+  }
+}

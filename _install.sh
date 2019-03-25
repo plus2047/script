@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-echo "need sodo permission for apt."
-sudo echo "sudo ready"
-
 # ===== installation functions =====
 function install_mac_app {
     [ ! -x `command -v brew` ] && return
@@ -35,8 +32,8 @@ function install_myzsh {
 }
 
 function backup_and_rm {
-    _TS=`date +"_%y%m%d"`
-    [ ! -e $1$_TS ] && mv $1 $1$_TS &> /dev/null
+    timestamp=`date +"_%y%m%d"`
+    [ ! -e $1$timestamp ] && mv $1 $1$timestamp &> /dev/null
     rm $1 &> /dev/null
 }
 
@@ -56,10 +53,15 @@ function append_to_file {
     [ ! "$TAIL" == "$1" ] && echo $1 >> $2
 }
 
+function user_check {
+    read -p "$1 (y/n):" input
+    [ "$input" = "y" ]
+}
+
 # ===== install all =====
 install_brew
-install_mac_app
 install_linux_app
+user_check "install mac app?" && install_mac_app
 install_myzsh
 
 script_dir=$(dirname $0)
@@ -67,6 +69,8 @@ script_dir=$(realpath $script_dir)
 
 link_to $script_dir/config/screenrc $HOME/.screenrc
 link_to $script_dir/config/vimrc $HOME/.vimrc
+user_check "install hammerspoon config?" && link_to $script_dir/config/hammerspoon $HOME/.hammerspoon
+user_check "install karabiner config?" && link_to $script_dir/config/karabiner $HOME/.config/karabiner
 
 append_to_file "source $script_dir/config/anyshrc" $HOME/.zshrc
 append_to_file "source $script_dir/config/anyshrc" $HOME/.bashrc

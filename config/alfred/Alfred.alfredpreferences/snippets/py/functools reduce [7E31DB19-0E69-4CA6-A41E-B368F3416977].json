@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "product = 1\nlist = [1, 2, 3, 4]\nfor num in list:\n    product = product * num    \n# replaced by:\nfrom functools import reduce\nproduct = reduce((lambda x, y: x * y), [1, 2, 3, 4])\n",
+    "dontautoexpand" : true,
+    "uid" : "7E31DB19-0E69-4CA6-A41E-B368F3416977",
+    "name" : "functools reduce",
+    "keyword" : ""
+  }
+}

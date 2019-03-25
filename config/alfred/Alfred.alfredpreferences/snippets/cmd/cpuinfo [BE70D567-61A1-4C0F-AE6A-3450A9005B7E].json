@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "cat \/proc\/cpuinfo",
+    "uid" : "BE70D567-61A1-4C0F-AE6A-3450A9005B7E",
+    "name" : "cpuinfo",
+    "keyword" : "cpuinfo"
+  }
+}

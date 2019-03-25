@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# scan port\nnmap -A -T4 www.baidu.com\n# scan ip address\nnmap -sP 192.168.0.0\/24 \n",
+    "dontautoexpand" : true,
+    "uid" : "0D3BC7EF-526A-458F-A6CC-CA65F7AB3ECC",
+    "name" : "scan net, ip or ports",
+    "keyword" : "nmap"
+  }
+}

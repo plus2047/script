@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ifconfig eth0 192.168.1.100 netmask 255.255.255.0\nroute add default gw 192.168.1.1 eth0  # default gateway\necho \"nameserver 1.1.1.1\" > \/etc\/resolvconf.resolv.conf.d\/base  # dns server\nresolvconf -u  # or edit \/etc\/resolv.conf\n",
+    "dontautoexpand" : true,
+    "uid" : "E5505572-C73F-4783-AC3E-3F9AD468CF11",
+    "name" : "network config",
+    "keyword" : "network"
+  }
+}

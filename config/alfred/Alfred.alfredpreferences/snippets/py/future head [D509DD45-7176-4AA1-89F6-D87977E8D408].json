@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# -*- coding: utf-8 -*-\nfrom __future__ import print_function\nfrom __future__ import division",
+    "uid" : "D509DD45-7176-4AA1-89F6-D87977E8D408",
+    "name" : "future head",
+    "keyword" : "futureh"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "echo 'export JAVA_HOME=\/usr\/lib\/jvm\/default-java' >> ~\/.zshrc",
+    "uid" : "8E47DBCD-6A8B-47C5-AA86-11B9703348F1",
+    "name" : "set java home",
+    "keyword" : "javahome"
+  }
+}

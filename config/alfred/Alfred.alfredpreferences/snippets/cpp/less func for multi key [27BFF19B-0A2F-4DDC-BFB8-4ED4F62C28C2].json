@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "bool operator<(const _Node& other) const { \n    return tie(count, index) < tie(other.count, other.index);\n}\n",
+    "uid" : "27BFF19B-0A2F-4DDC-BFB8-4ED4F62C28C2",
+    "name" : "less func for multi key",
+    "keyword" : "less"
+  }
+}

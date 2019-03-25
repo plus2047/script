@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# suggest: always use .\n\n# open with utf-8:\n\n# python3\nopen(filename, encoding=\"utf-8\")\n\n# python2\n# suggest: always use this function to read\/write.\nimport io\nf = io.open(filename, encoding=\"utf-8\")\n# type(f.read()) == unicode",
+    "dontautoexpand" : true,
+    "uid" : "23B2C0E8-65E7-4520-B320-FE58026F27D5",
+    "name" : "io utf8 unicode",
+    "keyword" : ""
+  }
+}

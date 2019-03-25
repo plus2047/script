@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# add kernel to jupyter notebook\nsource activate new_kernel_env\nconda install ipykernel\nipykernel install --user\n# if your shell don't find ipykernel\npython -m ipykernel install --user\n",
+    "dontautoexpand" : true,
+    "uid" : "5947EC35-15F5-439D-ADA8-973E88D3C2BD",
+    "name" : "conda kernel management",
+    "keyword" : ""
+  }
+}

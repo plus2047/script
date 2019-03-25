@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "export PATH=$(echo $PATH | tr : \"\\n\"| sort | uniq | tr \"\\n\" :)\n",
+    "dontautoexpand" : true,
+    "uid" : "33984913-EFB1-4D76-912D-992074D62CD2",
+    "name" : "remove duplicates in PATH",
+    "keyword" : ""
+  }
+}

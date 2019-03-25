@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from matplotlib import pyplot as plt\nimport numpy as np\n\npower = np.sum(data**2, axis=0)\npower \/= np.min(power)\nax = plt.gca()\nax.plot(power, 'x')\nax.set_ylim([0, 16])\nfig = plt.gcf()\nfig.set_size_inches(16, 4)\nplt.show()\n\nfor index in range(32):\n    ax = plt.subplot(4, 8, index+1)\n    ax.plot(data[::100, index])\n    ax.set_xticks([])\n    plt.title('chan %02d' % index)\nfig = plt.gcf()\nfig.set_size_inches(16, 8)\nplt.tight_layout()\nplt.show()",
+    "uid" : "997C0E2C-1611-4679-A068-F499FB4B1705",
+    "name" : "channel subplot",
+    "keyword" : "checkchan"
+  }
+}

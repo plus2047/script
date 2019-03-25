@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# -*- coding: utf-8 -*-\nfrom __future__ import print_function\nfrom __future__ import division\nimport numpy as np\nimport json\nimport logging\nfrom config import logfile\n\n# create logger with 'spam_application'\nlogger = logging.getLogger('defaultLog')\nlogger.setLevel(logging.DEBUG)\n# create file handler which logs even debug messages\nfh = logging.FileHandler(logfile)\nfh.setLevel(logging.DEBUG)\n# create console handler with a higher log level\nch = logging.StreamHandler()\nch.setLevel(logging.ERROR)\n# create formatter and add it to the handlers\nformatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')\nfh.setFormatter(formatter)\nch.setFormatter(formatter)\n# add the handlers to the logger\nlogger.addHandler(fh)\nlogger.addHandler(ch)\n\nlogger.info(\"logger init.\")\n\n\ndef info(msg):\n    logger.info(msg)\n\n\ndef warning(msg):\n    logger.warning(msg)\n\n\ndef save_json(obj, name=\"Unnamed\"):\n    \"\"\"\n    save python object to log file as json.\n\n    :param obj: obj to save. build-in python data struct or numpy array.\n    :param name: name to store this object.\n    :return: None\n    \"\"\"\n    if type(obj) == np.ndarray:\n        obj = obj.tolist()\n    s = json.dumps(obj)\n    if len(s) > 4096:\n        logger.warning(\"saving a large obj, be careful.\")\n    logger.info(\"save json obj: %s =  %s\" % (name, s))\n",
+    "uid" : "9E99C917-D6D9-4AD9-B0E4-DE12BBBA290F",
+    "name" : "logger",
+    "keyword" : "log"
+  }
+}

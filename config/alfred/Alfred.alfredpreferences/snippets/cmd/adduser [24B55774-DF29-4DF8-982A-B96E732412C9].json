@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "```text\n# adduser\nadduser username\n# add this user to sudo group\nusermod -aG sudo username\n# stop all process for special user\npkill -u username\n# remove user\nuserdel username\n# remove user and it's home\nuserdel -r username\n```\n",
+    "dontautoexpand" : true,
+    "uid" : "24B55774-DF29-4DF8-982A-B96E732412C9",
+    "name" : "adduser",
+    "keyword" : "adduser"
+  }
+}

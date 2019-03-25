@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pmset -g  # check status\nsudo pmset -a autopoweroff 0\nsudo pmset -a standby 0\nsudo pmset -a tcpkeepalive 0\nsudo pmset -a powernap 0\n",
+    "dontautoexpand" : true,
+    "uid" : "512CF01D-276D-4C86-A608-56971EFC04FF",
+    "name" : "pmset openbsd power manager setting",
+    "keyword" : "pmset"
+  }
+}

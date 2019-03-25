@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "$$\n\\begin{align*}\n\n\\end{align*}\n$$\n",
+    "uid" : "59516E02-C166-4E5C-AD5B-B1702D9A4578",
+    "name" : "tex math env",
+    "keyword" : "tex"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ".\/xflash ~\/workspace\/xtime\/project_chan32\/sw_usb_audio\/DEV_mc_for_core\/bin\/MCA_DEFAULT\/DEV_mc_for_core_MCA_DEFAULT.xe  # if only one xtag device is detacted, no other params needed.",
+    "uid" : "217DD3B4-9453-4FDE-BF29-1E8D044C7400",
+    "name" : "xflash: burn xmos chips",
+    "keyword" : "xflash"
+  }
+}

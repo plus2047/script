@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "void next_permutation(vector<int>& nums) {\n    auto i = is_sorted_until(nums.rbegin(), nums.rend());\n    if (i != nums.rend())\n        swap(*i, *upper_bound(nums.rbegin(), i, *i));\n    reverse(nums.rbegin(), i);\n}",
+    "uid" : "A0F35176-B1BA-4559-B7F3-F46FB5E0A96C",
+    "name" : "next permutation",
+    "keyword" : "permutation"
+  }
+}

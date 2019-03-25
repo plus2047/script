@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "str1.lstrip()\nstr2.rstrip()\nstr3.strip()\n",
+    "dontautoexpand" : true,
+    "uid" : "5E76BB2C-344D-4A03-8D8B-E9232CB560BF",
+    "name" : "remove space in begin or end",
+    "keyword" : ""
+  }
+}

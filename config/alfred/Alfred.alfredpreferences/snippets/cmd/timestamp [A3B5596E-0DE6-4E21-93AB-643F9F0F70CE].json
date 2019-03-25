@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "_TS=`date +\"_%y%m%d\"`",
+    "uid" : "A3B5596E-0DE6-4E21-93AB-643F9F0F70CE",
+    "name" : "timestamp",
+    "keyword" : "timestamp"
+  }
+}

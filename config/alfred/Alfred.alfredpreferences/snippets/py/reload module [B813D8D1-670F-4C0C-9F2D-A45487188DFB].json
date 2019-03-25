@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import importlib\nimportlib.reload({clipboard})",
+    "uid" : "B813D8D1-670F-4C0C-9F2D-A45487188DFB",
+    "name" : "reload module",
+    "keyword" : "reload"
+  }
+}
