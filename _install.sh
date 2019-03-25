@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-alias BREW='ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-alias ZSH='sh -c $(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
-
 echo "need sodo permission for apt."
 sudo echo "sudo ready"
 
 # ===== basic =====
 if [ `uname` = "Darwin" ]; then
     if [ ! -x `command -v brew` ]; then
-        BREW ; hash -r
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        hash -r
     fi
     brew install coreutils git zsh python3
 else
@@ -25,7 +23,7 @@ if [ `uname` = "Darwin" ]; then
 fi
 
 # ===== oh-my-zsh =====
-[ ! -d "$HOME/.oh-my-zsh" ] && ZSH
+[ ! -d "$HOME/.oh-my-zsh" ] && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # ===== install config files. =====
 # vim & screen
