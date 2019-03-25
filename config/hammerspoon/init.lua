@@ -1,5 +1,5 @@
 -- reload config
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "n", function()
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "n", function()
   hs.reload()
 end)
 hs.alert.show("Config loaded")
@@ -13,7 +13,7 @@ local function windowBind(hyper, keyFuncTable)
     hk.bind(hyper, key, fn)
   end
 end
-windowBind({"alt", "ctrl", "shift"}, {
+windowBind({"alt", "ctrl", "shift", "command"}, {
   f = wm.maximizeWindow,    
   o = wm.centerOnScreen,    
   left = wm.leftHalf,       
