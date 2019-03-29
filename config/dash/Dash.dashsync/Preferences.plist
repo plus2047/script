@@ -93,7 +93,7 @@
 			<key>Keras</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-25T12:26:26Z</date>
+				<date>2019-03-25T14:00:19Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -165,7 +165,7 @@
 			<key>pyspark</key>
 			<dict>
 				<key>date</key>
-				<date>2019-01-29T05:42:42Z</date>
+				<date>2019-03-25T14:00:19Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -229,7 +229,7 @@
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-10T11:46:29Z</date>
+				<date>2019-03-27T04:39:22Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>
