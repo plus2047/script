@@ -16,8 +16,8 @@ end
 windowBind({"alt", "ctrl", "shift", "command"}, {
   f = wm.maximizeWindow,    
   o = wm.centerOnScreen,    
-  left = wm.leftHalf,       
-  right = wm.rightHalf,     
-  up = wm.topHalf,          
-  down = wm.bottomHalf      
+  h = wm.leftHalf,       
+  l = wm.rightHalf,     
+  k = wm.topHalf,          
+  j = wm.bottomHalf      
 })
