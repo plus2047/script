@@ -14,7 +14,7 @@ function install_linux_app {
     [ ! `uname` = "Linux" ] && return
     [ ! -x `command -v apt` ] && return
     echo "install linux app..."
-    sudo apt install zsh python3 git
+    sudo apt install zsh python3 git mosh
 }
 
 function install_brew {
