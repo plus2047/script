@@ -145,7 +145,7 @@
 			<key>TensorFlow</key>
 			<dict>
 				<key>date</key>
-				<date>2019-03-06T01:41:42Z</date>
+				<date>2019-04-01T01:48:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -244,7 +244,7 @@
 			<key>http://kapeli.com/feeds/Pandas.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-10T11:23:21Z</date>
+				<date>2019-04-01T01:48:19Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_2.xml</key>
 			<dict>
@@ -259,7 +259,7 @@
 			<key>http://kapeli.com/feeds/SciPy.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-10T11:23:30Z</date>
+				<date>2019-04-01T01:49:11Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
