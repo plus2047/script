@@ -522,6 +522,9 @@
                                             "right_control",
                                             "right_shift",
                                             "right_option"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -541,6 +544,9 @@
                                             "right_control",
                                             "right_shift",
                                             "right_option"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
