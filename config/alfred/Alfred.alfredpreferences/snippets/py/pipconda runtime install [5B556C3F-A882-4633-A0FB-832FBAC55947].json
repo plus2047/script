@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pip\npip.main(['install', 'json'])    \n",
+    "dontautoexpand" : true,
+    "uid" : "5B556C3F-A882-4633-A0FB-832FBAC55947",
+    "name" : "pip\/conda: runtime install",
+    "keyword" : ""
+  }
+}

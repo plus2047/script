@@ -6,75 +6,8 @@
   "workbench.statusBar.feedback.visible": false,
   "git.autofetch": true,
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4}",
-  // "vim.incsearch": true,
-  // "vim.useSystemClipboard": true,
-  // "vim.useCtrlKeys": true,
-  // "vim.hlsearch": true,
-  // "vim.whichwrap": "<,>,h,l,[,],b",
-  // "vim.handleKeys": {
-  //   "<C-a>": false,
-  //   "<C-e>": false
-  // },
-  // "vim.leader": "<space>",
-  // "vim.insertModeKeyBindings": [
-  //   {
-  //     "before": [
-  //       "j",
-  //       "j"
-  //     ],
-  //     "after": [
-  //       "<Esc>"
-  //     ]
-  //   }
-  // ],
-  // "vim.normalModeKeyBindingsNonRecursive": [
-  //   {
-  //     "before": [
-  //       "Z",
-  //       "Z"
-  //     ],
-  //     "commands": [
-  //       ":wq"
-  //     ]
-  //   },
-  //   {
-  //     "before": [
-  //       "0"
-  //     ],
-  //     "after": [
-  //       "^"
-  //     ]
-  //   },
-  //   {
-  //     "before": [
-  //       "<leader>",
-  //       "<cr>"
-  //     ],
-  //     "commands": [
-  //       ":noh"
-  //     ]
-  //   },
-  //   {
-  //     "before": [
-  //       "<leader>",
-  //       "w"
-  //     ],
-  //     "commands": [
-  //       ":w"
-  //     ]
-  //   },
-  //   // {
-  //   //   "before": [
-  //   //     "<enter>"
-  //   //   ],
-  //   //   "after": [
-  //   //     ":"
-  //   //   ]
-  //   // }
-  // ],
   "python.jediEnabled": false,
   "python.linting.pylintEnabled": true,
-  "code-runner.fileDirectoryAsCwd": false,
   "editor.minimap.enabled": true,
   "workbench.statusBar.visible": true,
   "git.confirmSync": false,
@@ -88,4 +21,11 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  "code-runner.fileDirectoryAsCwd": false,
+  "code-runner.executorMap": {
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"cpp": "cd $dir && g++ --std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"python": "python -u"
+  },
+  "C_Cpp.updateChannel": "Insiders"
 }

@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "numpy.special.perm\nnumpy.special.comb",
-    "dontautoexpand" : true,
-    "uid" : "928A30DB-0088-4ECB-9CCF-1953751ECDD4",
-    "name" : "perm comb",
-    "keyword" : ""
-  }
-}

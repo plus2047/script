@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "for filename in sorted(os.listdir(DATA_DIR)):\n    with open(DATA_DIR + filename) as f:\n        # do something...\n        pass\n    # you'd better to report progress.\n    print(\"processed: %s\" % filename)\n",
+    "dontautoexpand" : true,
+    "uid" : "5013510A-E920-43F6-9490-397B0ED23374",
+    "name" : "os\/sys: python list dir",
+    "keyword" : ""
+  }
+}

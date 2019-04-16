@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "\" general\n\" use Ctrl-key in insert mode for navigate\n\" donot try to remap <C-h>, sometimes it's <backspace>.\ninoremap <C-e> <C-o>$\ninoremap <C-a> <C-o>^\n\ninoremap jj <esc>\ninoremap <s-tab> <c-n>\nnnoremap 0 ^\n\nlet mapleader = \" \"\nnnoremap <leader><cr> :noh<cr>\nnnoremap <leader>p :set paste!<cr>\nnnoremap <leader>n :set number!<cr>\nnnoremap <leader>w :w<cr>\nnnoremap <leader>q :wq<cr>",
-    "uid" : "BA424114-B5FB-4823-98F1-B959575D1905",
-    "name" : "vimrc shortcuts",
-    "keyword" : "vimrc"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "def cmd(cmd, _stdin=None):\n    import os\n    _i, _o = \"__in__\", \"__out__\"\n    open(_i, 'w').write(text)\n    res = os.system(\"%s < %s > %s\" % (cmd, _i, _o))\n    text = open(_o, 'r').read()\n    os.system(\"rm %s %s\" % (_i, _o)\n    return res, text\n",
-    "uid" : "BC3FB9D5-6EE6-4BC2-8FF1-BFCE2445550E",
-    "name" : "run shell command",
-    "keyword" : "cmd"
-  }
-}

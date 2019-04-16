@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "logfile = os.path.dirname(os.path.realpath(__file__)) + \"\/__log__.txt\"",
-    "uid" : "6AA1C25E-842E-4ED8-8E67-36C3C0E12395",
-    "name" : "script file path",
-    "keyword" : "filepath"
-  }
-}

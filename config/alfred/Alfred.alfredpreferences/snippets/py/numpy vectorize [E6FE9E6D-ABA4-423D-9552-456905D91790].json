@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "import numpy as np\np = lambda x, y: x + y # assume this is a function can't be used on matrix\npv = np.vectorize(p) # now it can used on matrix\nxGrid, yGrid = np.meshgrid(np.arange(10), np.arange(10))\npGrid = pv(xGrid, yGrid)\n",
-    "dontautoexpand" : true,
-    "uid" : "E6FE9E6D-ABA4-423D-9552-456905D91790",
-    "name" : "numpy vectorize",
-    "keyword" : ""
-  }
-}

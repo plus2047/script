@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "`list` is iterable. If an object is iterable, we can call `.__iter__()` to get an iterator.\n\n`[1, 2, 3].__iter__()` is an iterator.\n\nNote: both iterable object and iterator object can be used in for loop:\n\n    for i in [1, 2, 3]: print(i, end=' ')\n    for i in [1, 2, 3].__iter__(): print(i, end=' ')\n",
-    "dontautoexpand" : true,
-    "uid" : "D03CDD3F-FD15-402A-B25E-2C937B6D0F1E",
-    "name" : "iterator & iterable",
-    "keyword" : ""
-  }
-}

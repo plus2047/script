@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "auto t0 = clock();\nsort(vec1.begin(), vec1.end());\nauto t1 = clock();\nquick_sort(vec2.begin(), vec2.end());\nauto t2 = clock();\n",
-    "uid" : "D1EFC25A-8305-41D8-BC98-4CCEE55F4F64",
-    "name" : "time it",
-    "keyword" : "timeit"
-  }
-}
