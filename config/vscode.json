@@ -78,7 +78,6 @@
   "editor.minimap.enabled": true,
   "workbench.statusBar.visible": true,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Solarized Light",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.errors.incompleteClasspath.severity": "ignore",
@@ -88,4 +87,5 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  "C_Cpp.updateChannel": "Insiders",
 }
