@@ -3,6 +3,6 @@
     "snippet" : "\/\/ ONLY IF NECESSARY!!!\nios::sync_with_stdio(false);\n",
     "uid" : "E75F98AC-2A4C-4FF2-8988-0556E2776751",
     "name" : "speed up iostream",
-    "keyword" : "iosunsync"
+    "keyword" : "iounsync"
   }
 }

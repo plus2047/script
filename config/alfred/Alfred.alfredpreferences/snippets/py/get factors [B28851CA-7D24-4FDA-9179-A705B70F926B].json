@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "def get_factors(n, prime_list=primes):\n    lim = int(n ** 0.5)\n    if prime_list is None:\n        prime_list = range(2, lim)\n    factors = []\n    for p in prime_list:\n        if p > lim:\n            break\n        while n % p == 0:\n            factors.append(p)\n            n \/\/= p\n    if n > 1:\n        factors.append(n)\n    return factors\n",
-    "uid" : "B28851CA-7D24-4FDA-9179-A705B70F926B",
-    "name" : "get factors",
-    "keyword" : "getfactors"
-  }
-}

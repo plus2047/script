@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Get current work dir:\n\n    os.getcwd()\n\nGet script path:\n\n    os.path.abspath(__file__)\n\nNote: this won't work for interpreter. `__file__` will only be set for a file.\n\nOthers:\n\n    os.path.dirname(path)\n    os.path.realpath(path) # == abspath\n\n",
+    "dontautoexpand" : true,
+    "uid" : "39415744-CA9E-4C4B-870C-CD0DF16317C8",
+    "name" : "os\/sys: script path \/ work dir",
+    "keyword" : ""
+  }
+}

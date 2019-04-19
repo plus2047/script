@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "ord('a')\nchr(97)\n",
-    "uid" : "C135653A-55D2-4B03-A87F-CF0E72B07DD0",
-    "name" : "python get ascii",
-    "keyword" : "ascii"
-  }
-}

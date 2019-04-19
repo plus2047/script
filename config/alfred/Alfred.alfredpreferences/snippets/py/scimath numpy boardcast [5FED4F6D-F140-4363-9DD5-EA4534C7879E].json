@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "A      (2d array):  5 x 4\nB      (1d array):      1\nResult (2d array):  5 x 4\n\nA      (2d array):  5 x 4\nB      (1d array):      4\nResult (2d array):  5 x 4\n\nA      (3d array):  15 x 3 x 5\nB      (3d array):  15 x 1 x 5\nResult (3d array):  15 x 3 x 5\n\nA      (3d array):  15 x 3 x 5\nB      (2d array):       3 x 5\nResult (3d array):  15 x 3 x 5\n\nA      (3d array):  15 x 3 x 5\nB      (2d array):       3 x 1\nResult (3d array):  15 x 3 x 5",
+    "dontautoexpand" : true,
+    "uid" : "5FED4F6D-F140-4363-9DD5-EA4534C7879E",
+    "name" : "sci\/math: numpy boardcast",
+    "keyword" : ""
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "scipy.stat.entropy  # entropy for a distribution\nsklearn.metrics.log_loss  # cross extropy loss for classification question",
+    "dontautoexpand" : true,
+    "uid" : "72E0DD67-8437-4116-898D-EBE611568062",
+    "name" : "sci\/math: entropy \/ loss function",
+    "keyword" : ""
+  }
+}

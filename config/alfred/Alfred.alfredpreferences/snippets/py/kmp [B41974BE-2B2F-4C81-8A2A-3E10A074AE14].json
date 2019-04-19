@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "#!\/usr\/bin\/env python\n# -*- coding: utf-8 -*-\n\n\ndef get_lps(s):\n    s_len = len(s)\n    lps = [0] * s_len\n\n    pre, i = 0, 1\n    while i < s_len:\n        if s[i] == s[pre]:\n            lps[i] = pre + 1\n            i += 1; pre += 1\n        else:\n            if pre == 0:\n                lps[i] = 0\n                i += 1\n            else:\n                pre = lps[pre - 1]\n\n    return lps\n\n\ndef search(s, pattern):\n    s_len, p_len = len(s), len(pattern)\n    lps = get_lps(pattern)\n\n    i = j = 0\n    while i < s_len:\n        if s[i] == pattern[j]:\n            i += 1; j += 1\n            if j == p_len:\n                return i - j\n        else:\n            if j == 0:\n                i += 1\n            else:\n                j = lps[j - 1]\n\n    return -1\n\n\nif __name__ == \"__main__\":\n    s = \"ABCABAABCABAC\"\n    p = \"CAB\"\n    print(\"find %s in %s at: %s.\" % (s, p, search(s, p)))\n\n",
-    "dontautoexpand" : true,
-    "uid" : "B41974BE-2B2F-4C81-8A2A-3E10A074AE14",
-    "name" : "kmp",
-    "keyword" : ""
-  }
-}

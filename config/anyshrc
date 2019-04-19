@@ -2,7 +2,7 @@ SD="$HOME/script/cmd"
 BD="$HOME/bin"
 
 # path
-export PATH="$SD:$BD:$PATH:/usr/local/sbin:$HOME/miniconda3/bin"
+export PATH="$HOME/miniconda3/bin:$SD:$BD:$PATH:/usr/local/sbin"
 
 # proxy
 alias setproxy='source $SD/proxy.sh 1087'

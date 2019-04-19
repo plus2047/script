@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# create a new branch\ngit checkout -b new-branch\n# push it to remote\ngit push --set-upstream origin new-branch\n# than create a pull request at github.com",
+    "dontautoexpand" : true,
+    "uid" : "86520E02-D161-4D2E-B144-33DD2FDB90D0",
+    "name" : "git pull request",
+    "keyword" : ""
+  }
+}

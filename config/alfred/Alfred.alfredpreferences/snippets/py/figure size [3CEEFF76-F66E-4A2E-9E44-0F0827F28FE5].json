@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "fig = plt.gcf()\nfig.set_size_inches([7, 7])",
-    "uid" : "3CEEFF76-F66E-4A2E-9E44-0F0827F28FE5",
-    "name" : "figure size",
-    "keyword" : "setsize"
-  }
-}
