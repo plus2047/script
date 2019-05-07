@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "timestamp = time.strftime(\"_%y%m%d_%H%M%S\")\n",
+    "uid" : "8FEAC0C5-E7C8-4976-89E7-E5649EB7749D",
+    "name" : "timestamp",
+    "keyword" : "timestamp"
+  }
+}

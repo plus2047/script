@@ -231,4 +231,20 @@ module.topDown = function ()
   end
 end
 
+-- personalize
+-- move window to next screen
+module.ToNextScreen = function ()
+    win = hs.window.frontmostWindow()
+    screen = win:screen()
+    if win:isFullScreen() then
+        win:setFullScreen(false)
+        win:moveToScreen(screen:next())
+        hs.timer.doAfter(0.6, function()
+            win:setFullScreen(true)
+        end)
+    else
+        win:moveToScreen(screen:next())
+    end
+end
+
 return module

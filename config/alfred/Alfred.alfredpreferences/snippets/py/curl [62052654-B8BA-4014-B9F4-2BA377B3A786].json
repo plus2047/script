@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "js1 = json.loads(urllib.request.urlopen(args.url).read())",
+    "uid" : "62052654-B8BA-4014-B9F4-2BA377B3A786",
+    "name" : "curl",
+    "keyword" : "curl"
+  }
+}
