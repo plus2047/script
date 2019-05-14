@@ -20,5 +20,11 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.colorTheme": "Solarized Light"
+  "workbench.colorTheme": "Solarized Light",
+  "cSpell.userWords": [
+    "code",
+    "leet",
+    "strftime",
+    "strptime"
+  ]
 }
