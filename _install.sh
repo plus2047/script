@@ -69,7 +69,7 @@ script_dir=$(realpath $script_dir)
 
 link_to $script_dir/config/screenrc $HOME/.screenrc
 link_to $script_dir/config/vimrc $HOME/.vimrc
-link_to $script_dir/config/vscode.json $HOME/Library/Application Support/Code/User/settings.json
+# link_to $script_dir/config/vscode.json $HOME/Library/Application Support/Code/User/settings.json
 user_check "install hammerspoon config?" && link_to $script_dir/config/hammerspoon $HOME/.hammerspoon
 user_check "install karabiner config?" && link_to $script_dir/config/karabiner $HOME/.config/karabiner
 
