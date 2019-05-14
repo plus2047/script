@@ -5,7 +5,7 @@ BD="$HOME/bin"
 export PATH="$HOME/miniconda3/bin:$SD:$BD:$PATH:/usr/local/sbin"
 
 # proxy
-alias setproxy='source $SD/proxy.sh 1087'
+alias setproxy='source $SD/proxy 1087'
 alias unsetproxy='source $SD/proxy.sh unset'
 
 # trash system
