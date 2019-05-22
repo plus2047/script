@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "data = json.loads('{\"foo\":1, \"bar\": 2}', object_pairs_hook=OrderedDict)",
+    "dontautoexpand" : true,
+    "uid" : "91BE9A56-3DB2-47AF-BF99-95798DD5ED1D",
+    "name" : "load json into OrderedDict",
+    "keyword" : ""
+  }
+}

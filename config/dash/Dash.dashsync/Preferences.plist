@@ -120,7 +120,7 @@
 			<key>PyTorch</key>
 			<dict>
 				<key>date</key>
-				<date>2018-12-11T02:00:42Z</date>
+				<date>2019-05-17T02:20:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -209,7 +209,7 @@
 			<key>http://kapeli.com/feeds/Boost.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-12-25T06:51:59Z</date>
+				<date>2019-05-17T02:24:04Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/C++.xml</key>
 			<dict>
@@ -219,7 +219,7 @@
 			<key>http://kapeli.com/feeds/Java_SE10.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2019-03-04T05:29:10Z</date>
+				<date>2019-05-17T02:23:46Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Java_SE8.xml</key>
 			<dict>
@@ -234,12 +234,12 @@
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-10T11:23:46Z</date>
+				<date>2019-05-17T02:23:08Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NumPy.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-10T11:23:24Z</date>
+				<date>2019-05-17T02:21:09Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Pandas.xml</key>
 			<dict>
@@ -249,7 +249,7 @@
 			<key>http://kapeli.com/feeds/Python_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-10T11:23:17Z</date>
+				<date>2019-05-17T02:21:10Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_3.xml</key>
 			<dict>
