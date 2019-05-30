@@ -1,7 +1,6 @@
 {
   "alfredsnippet" : {
     "snippet" : "-Dmaven.test.skip=true",
-    "dontautoexpand" : true,
     "uid" : "D3E74F44-6935-48D3-B514-C76640C41DAF",
     "name" : "mvn skip test",
     "keyword" : "mvnskiptest"

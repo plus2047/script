@@ -869,7 +869,7 @@
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>UseMetal</key>
