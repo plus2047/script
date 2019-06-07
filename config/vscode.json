@@ -38,7 +38,6 @@
     "strptime"
   ],
   "sync.gist": "e8752aa612ff9b02514ca849b69cbad5",
-  // "sync.token": "fa5cbc8f8c206c7e08402d8bb56544400a0ba88a",
   "sync.autoUpload": true,
   "sync.autoDownload": true,
   "workbench.colorTheme": "Solarized Light",
