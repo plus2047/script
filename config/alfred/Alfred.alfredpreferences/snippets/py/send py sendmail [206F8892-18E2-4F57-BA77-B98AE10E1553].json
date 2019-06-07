@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from email.mime.text import MIMEText\nfrom subprocess import Popen, PIPE\n\nmsg = MIMEText(\"Here is the body of my message\")\nmsg[\"From\"] = \"me@example.com\"\nmsg[\"To\"] = \"you@example.com\"\nmsg[\"Subject\"] = \"This is the subject.\"\np = Popen([\"\/usr\/sbin\/sendmail\", \"-t\", \"-oi\"], stdin=PIPE)\np.communicate(msg.as_string())",
+    "dontautoexpand" : true,
+    "uid" : "206F8892-18E2-4F57-BA77-B98AE10E1553",
+    "name" : "send py sendmail",
+    "keyword" : ""
+  }
+}

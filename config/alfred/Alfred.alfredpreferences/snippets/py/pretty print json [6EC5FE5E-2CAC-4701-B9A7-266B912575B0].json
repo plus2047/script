@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "json.dumps(parsed, indent=4, sort_keys=True)",
+    "dontautoexpand" : true,
+    "uid" : "6EC5FE5E-2CAC-4701-B9A7-266B912575B0",
+    "name" : "pretty print json",
+    "keyword" : ""
+  }
+}

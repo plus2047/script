@@ -13,7 +13,7 @@ local function windowBind(hyper, keyFuncTable)
     hk.bind(hyper, key, fn)
   end
 end
-hk.bind(hyper, ';', ws.windowFuzzySearch)
+hk.bind(hyper, 'tab', ws.windowFuzzySearch)
 windowBind(hyper, {
   f = wm.maximizeWindow,    
   o = wm.centerOnScreen,    
