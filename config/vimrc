@@ -92,9 +92,14 @@ inoremap <C-a> <C-o>^
 
 " inoremap jj <esc><esc>
 nnoremap <cr> :
+tnoremap <Esc> <C-\><C-n>
 
 let mapleader = " "
 nnoremap <leader><cr> :noh<cr>
 nnoremap <leader>p :set paste!<cr>
 nnoremap <leader>n :set number!<cr>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
 

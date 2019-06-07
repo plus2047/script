@@ -482,7 +482,7 @@
                         ]
                     },
                     {
-                        "description": "Hyper Misc (Check https://github.com/Vonng/Capslock for all details)",
+                        "description": "Hyper Misc (personlized)",
                         "manipulators": [
                             {
                                 "from": {
@@ -615,28 +615,6 @@
                                         "key_code": "slash",
                                         "modifiers": [
                                             "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_shift",
-                                            "right_option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": [
-                                            "left_control"
                                         ]
                                     }
                                 ],

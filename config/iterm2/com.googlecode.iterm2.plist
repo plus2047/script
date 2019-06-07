@@ -71,12 +71,14 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>643 207 445 103 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 22 599 521 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>331 227 796 486 0 0 1440 877 </string>
+	<string>330 284 796 486 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -685,7 +687,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 16</string>
+			<string>Monaco 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -857,7 +859,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-05-22T08:12:56Z</date>
+	<date>2019-06-05T00:39:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -868,8 +870,10 @@
 	<real>0.10000000000000001</real>
 	<key>TabStyle</key>
 	<integer>1</integer>
-	<key>TabViewType</key>
+	<key>TabStyleWithAutomaticOption</key>
 	<integer>1</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>UseMetal</key>
