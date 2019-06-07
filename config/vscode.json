@@ -13,18 +13,34 @@
   "git.confirmSync": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "java.errors.incompleteClasspath.severity": "ignore",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.colorTheme": "Solarized Light",
   "cSpell.userWords": [
-    "code",
-    "leet",
+    "allof",
+    "asmax",
+    "asmin",
+    "elasti",
+    "frontof",
+    "hulu",
+    "jsons",
+    "leetcode",
+    "mval",
+    "peng",
+    "repi",
+    "repr",
+    "smtplib",
+    "stoi",
     "strftime",
     "strptime"
-  ]
+  ],
+  "sync.gist": "e8752aa612ff9b02514ca849b69cbad5",
+  // "sync.token": "fa5cbc8f8c206c7e08402d8bb56544400a0ba88a",
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "workbench.colorTheme": "Solarized Light",
+  "cSpell.allowCompoundWords": true
 }
