@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#include <cassert>\n#include <climits>\n#include <cstdio>\n#include <cstdlib>\n#include <cstring>\n#include <ctime>\n\n#include <algorithm>\n#include <functional>\n#include <iostream>\n#include <random>\n#include <sstream>\n#include <stdexcept>\n\n#include <array>\n#include <map>\n#include <queue>\n#include <set>\n#include <stack>\n#include <unordered_map>\n#include <unordered_set>\n#include <vector>\n\nusing namespace std;\n\ntypedef long long int LL;\n#define G(_tuple, num) (get<num>(_tuple))\n#define len(container) int((container).size())\n#define allof(c) (c).begin(), (c).end()\n#define frontof(c, k) (c).begin(), (c).begin() + (k)\n#define rep(i, N) for (int i = 0; i < int(N); i++)\n#define repr(i, begin, end) for (int i = int(begin); i < int(end); i++)\n#define repi(i, N) for (int i = int(N) - 1; i >= 0; i--)\n#define asmax(mval, val) if(mval < val) mval = val;\n#define asmin(mval, val) if(mval > val) mval = val;\n#define vec2d(type, name, m, n, v) \\\n    vector<vector<type>> name = vector<vector<type>>(m, vector<type>(n, v))\n\ntemplate <int group = 20, typename ITER>\nvoid show(const char* note, ITER begin, ITER end) {\n    cout << note;\n    for (int i = 1; begin != end; i++) {\n        std::cout << *(begin++) << ' ';\n        if (i % group == 0 or begin == end) std::cout << std::endl;\n    }\n};\n\/\/ ===== personal contest template =====",
+    "uid" : "E0E9CAEB-F997-4A33-BB31-F268285667B8",
+    "name" : "full env",
+    "keyword" : "fenv"
+  }
+}
