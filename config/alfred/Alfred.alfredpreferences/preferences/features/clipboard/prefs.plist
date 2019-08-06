@@ -8,7 +8,7 @@
 	<real>4</real>
 	<key>autoExpandSnippetsSound</key>
 	<false/>
-	<key>autoPaste</key>
+	<key>fastAppendPlaySound</key>
 	<false/>
 	<key>hotkey</key>
 	<dict>
