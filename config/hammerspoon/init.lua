@@ -8,21 +8,21 @@ local hk = require("hs.hotkey")
 hyper = {"alt", "ctrl", "shift", "command"}
 
 -- window management
-local function windowBind(hyper, keyFuncTable)
-  for key,fn in pairs(keyFuncTable) do
-    hk.bind(hyper, key, fn)
-  end
-end
-hk.bind(hyper, 'tab', ws.windowFuzzySearch)
-windowBind(hyper, {
-  f = wm.maximizeWindow,    
-  o = wm.centerOnScreen,    
-  q = wm.leftHalf,       
-  r = wm.rightHalf,     
-  e = wm.topHalf,          
-  w = wm.bottomHalf,
-  b = wm.ToNextScreen
-})
+-- local function windowBind(hyper, keyFuncTable)
+--   for key,fn in pairs(keyFuncTable) do
+--     hk.bind(hyper, key, fn)
+--   end
+-- end
+-- hk.bind(hyper, 'tab', ws.windowFuzzySearch)
+-- windowBind(hyper, {
+--   f = wm.maximizeWindow,    
+--   o = wm.centerOnScreen,    
+--   q = wm.leftHalf,       
+--   r = wm.rightHalf,     
+--   e = wm.topHalf,          
+--   w = wm.bottomHalf,
+--   b = wm.ToNextScreen
+-- })
 
 -- move mouse
 hk.bind(hyper, 'v', function()
