@@ -14,15 +14,16 @@ hyper = {"alt", "ctrl", "shift", "command"}
 --   end
 -- end
 -- hk.bind(hyper, 'tab', ws.windowFuzzySearch)
--- windowBind(hyper, {
---   f = wm.maximizeWindow,    
---   o = wm.centerOnScreen,    
---   q = wm.leftHalf,       
---   r = wm.rightHalf,     
---   e = wm.topHalf,          
---   w = wm.bottomHalf,
---   b = wm.ToNextScreen
--- })
+
+windowBind(hyper, {
+  f = wm.maximizeWindow,    
+  o = wm.centerOnScreen,    
+  q = wm.leftHalf,       
+  r = wm.rightHalf,     
+  e = wm.topHalf,          
+  w = wm.bottomHalf,
+  b = wm.ToNextScreen
+})
 
 -- move mouse
 hk.bind(hyper, 'v', function()
