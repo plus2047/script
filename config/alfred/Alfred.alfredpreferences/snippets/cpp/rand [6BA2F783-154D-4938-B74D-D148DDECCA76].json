@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#include <random>\n#include <limits>\n\ntemplate <typename num>\nstruct RandNum {\n    std::mt19937 gen;\n    std::uniform_int_distribution<num> dist;\n\n    RandNum(num left, num right, unsigned seed = 0)\n        : gen(seed), dist(left, right) {}\n\n    num operator()() { return dist(gen); }\n};\n\nRandNum<int> randInt = RandNum<int>(0, std::numeric_limits<int>::max());",
+    "uid" : "6BA2F783-154D-4938-B74D-D148DDECCA76",
+    "name" : "rand",
+    "keyword" : "rand"
+  }
+}

@@ -3,6 +3,8 @@ BD="$HOME/bin"
 
 # path
 export PATH="$HOME/miniconda3/bin:$SD:$BD:$PATH:/usr/local/sbin"
+export GOPATH="$HOME/goworkspace"
+export PATH="$HOME/.jenv/bin:$PATH"
 
 # proxy
 alias setproxy='source $SD/proxy 1087'

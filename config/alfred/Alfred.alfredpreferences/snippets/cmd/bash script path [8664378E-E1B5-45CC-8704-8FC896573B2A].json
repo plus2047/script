@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "SCRIPT_PATH=$(dirname $(readlink -f \"$0\"))",
+    "uid" : "8664378E-E1B5-45CC-8704-8FC896573B2A",
+    "name" : "bash script path",
+    "keyword" : "scriptpath"
+  }
+}

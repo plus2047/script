@@ -120,7 +120,11 @@
 			<key>PyTorch</key>
 			<dict>
 				<key>date</key>
+<<<<<<< HEAD
 				<date>2019-06-30T03:58:58Z</date>
+=======
+				<date>2019-07-02T00:14:33Z</date>
+>>>>>>> c0b6d28f43848362a9b4a4bed751b12e07f0a1ff
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -145,7 +149,11 @@
 			<key>TensorFlow</key>
 			<dict>
 				<key>date</key>
+<<<<<<< HEAD
 				<date>2019-07-19T13:52:14Z</date>
+=======
+				<date>2019-07-19T01:42:08Z</date>
+>>>>>>> c0b6d28f43848362a9b4a4bed751b12e07f0a1ff
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
