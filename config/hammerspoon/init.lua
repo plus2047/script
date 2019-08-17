@@ -8,11 +8,12 @@ local hk = require("hs.hotkey")
 hyper = {"alt", "ctrl", "shift", "command"}
 
 -- window management
--- local function windowBind(hyper, keyFuncTable)
---   for key,fn in pairs(keyFuncTable) do
---     hk.bind(hyper, key, fn)
---   end
--- end
+local function windowBind(hyper, keyFuncTable)
+  for key,fn in pairs(keyFuncTable) do
+    hk.bind(hyper, key, fn)
+  end
+end
+
 -- hk.bind(hyper, 'tab', ws.windowFuzzySearch)
 
 windowBind(hyper, {
