@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport scipy as sp\nimport sounddevice as sd\nimport soundfile as sf\n\n# data, fs = sf.read(\"filename\")\n# sd.play(data[:, chan_idx], fs)\n\ndef norm(d): return d \/ np.max(np.abs(d))\ndef chanEnergy(data): print(np.mean(data ** 2, axis=0))\n",
+    "uid" : "7FFBB510-9311-4525-A31D-CDBAD4E91850",
+    "name" : "",
+    "keyword" : "audioh"
+  }
+}
