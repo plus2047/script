@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "ssh -t alpha 'bash --rcfile ~\/.bashrcX'",
-    "dontautoexpand" : true,
-    "uid" : "9278B20D-4683-4052-AD6A-2CDA261DB9CA",
-    "name" : "ssh with special rc file",
-    "keyword" : "sshwithrc"
-  }
-}

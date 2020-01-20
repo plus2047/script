@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "d = {'a': 1, 'b': 2}\n# pickle\nimport pickle\nd_str = pickle.dumps(d)\npickle.dump(d, file_obj)  # save to file\n_d = pickle.loads(d_str)\n_d = pickle.load(file_obj)  # load from file\n# json\nimport json\n# json.dump \/ json.dumps \/ json.load \/ json.loads\n# json.load[s] return unicode.",
-    "uid" : "B5B60F39-C5B2-48FF-BFD9-97F37D9135FD",
-    "name" : "io\/file: pickle \/ json dump load",
-    "keyword" : "pickle"
-  }
-}

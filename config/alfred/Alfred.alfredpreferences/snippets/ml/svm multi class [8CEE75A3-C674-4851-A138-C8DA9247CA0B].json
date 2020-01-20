@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "SVM本身是一个二值分类器\n\n目前，构造SVM多类分类器的方法主要有两类\n（1）直接法，直接在目标函数上进行修改，将多个分类面的参数求解合并到一个最优化问题中，通过求解该最优化问题“一次性”实现多类分类。这种方法看似简单，但其计算复杂度比较高，实现起来比较困难，只适合用于小型问题中；\n（2）间接法，主要是通过组合多个二分类器来实现多分类器的构造，常见的方法有one-against-one和one-against-all两种。\n\n间接法：\n一对多法（one-versus-rest,简称OVR SVMs）：训练时依次把某个类别的样本归为一类,其他剩余的样本归为另一类，这样k个类别的样本就构造出了k个SVM。分类时将未知样本分类为具有最大分类函数值的那类。\n一对一法（one-versus-one,简称OVO SVMs或者pairwise）：其做法是在任意两类样本之间设计一个SVM，因此k个类别的样本就需要设计k(k-1)\/2个SVM。\n层次支持向量机。\n\n",
-    "dontautoexpand" : true,
-    "uid" : "8CEE75A3-C674-4851-A138-C8DA9247CA0B",
-    "name" : "svm multi class",
-    "keyword" : ""
-  }
-}

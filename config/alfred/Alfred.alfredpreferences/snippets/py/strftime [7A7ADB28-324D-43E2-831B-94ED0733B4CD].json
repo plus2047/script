@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "time.strftime(\"%y%m%d_%H%M\")\n",
-    "dontautoexpand" : true,
-    "uid" : "7A7ADB28-324D-43E2-831B-94ED0733B4CD",
-    "name" : "strftime",
-    "keyword" : ""
-  }
-}

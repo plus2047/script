@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "#!\/usr\/bin\/env python\n# -*- coding: utf-8 -*-\nfrom __future__ import print_function\nfrom __future__ import division",
-    "uid" : "14D31A4A-0BB3-4816-B347-2692F877A5D1",
-    "name" : "script head",
-    "keyword" : "scripth"
-  }
-}

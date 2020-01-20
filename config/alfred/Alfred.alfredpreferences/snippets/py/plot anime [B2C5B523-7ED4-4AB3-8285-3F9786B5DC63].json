@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "from IPython import display\n\nfig0 = plt.figure(0)\nfig0.set_size_inches(5,6)\n\nfor block_index in range(0, block_num):\n    energy = get_energy()\n\n    ax = plt.gca(projection=\"polar\")\n    ax.clear()\n    ax.set_title(\"block: %d\/%d\" % (block_index, block_num), pad=20)\n    ax.plot(np.linspace(-np.pi, np.pi, c.az_num), energy[:, c.ref_el_index])\n\n    display.clear_output(wait=True)\n    display.display(plt.gcf())\n\nplt.close()\nplt.close()",
-    "uid" : "B2C5B523-7ED4-4AB3-8285-3F9786B5DC63",
-    "name" : "plot: anime",
-    "keyword" : "anime"
-  }
-}

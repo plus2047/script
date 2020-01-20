@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "When ssh login, get warning: `LC_CTYPE cannot change locale utf8`. This is because local shell pass bad `LC_*` environment variables to remote server. Commit the line `SetEnv LC_*` in `\/etc\/ssh\/ssh_config` in **local machine**. [REF](https:\/\/superuser.com\/questions\/485569\/how-to-disable-sendenv-variables-set-in-ssh-config-from-ssh-config)",
-    "dontautoexpand" : true,
-    "uid" : "29A4FEBC-F742-433E-97E2-FE773F2AE9D4",
-    "name" : "LC_CTYPE error",
-    "keyword" : "lcctype"
-  }
-}

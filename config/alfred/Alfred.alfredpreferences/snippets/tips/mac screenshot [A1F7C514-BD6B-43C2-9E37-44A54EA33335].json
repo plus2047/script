@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "command+shift+3 whole screen to file\ncommand+shift+alt+3 whole screen to clipboard\ncommand+shift+4 selected portion to file\ncommand+shift+alt+4 selected portion to clipboard\ncommand+shift+alt+4, space selected window to file\n",
-    "uid" : "A1F7C514-BD6B-43C2-9E37-44A54EA33335",
-    "name" : "mac screenshot",
-    "keyword" : "screenshot"
-  }
-}

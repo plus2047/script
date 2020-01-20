@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "int D[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};\nfor(int d = 0; d < 4; d++){\n    int _i = i + D[d][0], _j = j + D[d][1];\n    if(_i < 0 or _j < 0 or _i >= M or _j >= N) continue;\n}\n",
-    "uid" : "6BE1E738-C8CC-4E8E-BC92-9CAF0C356320",
-    "name" : "board bfs search",
-    "keyword" : "boardbfs"
-  }
-}

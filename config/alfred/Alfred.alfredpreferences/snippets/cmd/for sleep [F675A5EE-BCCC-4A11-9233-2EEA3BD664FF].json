@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "echo \"begin sleep\"\nfor i in {1..10}\ndo\n    sleep 1\n    echo \"sleep $i\"\ndone\n\n",
-    "dontautoexpand" : true,
-    "uid" : "F675A5EE-BCCC-4A11-9233-2EEA3BD664FF",
-    "name" : "for & sleep",
-    "keyword" : "for"
-  }
-}

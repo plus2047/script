@@ -1,7 +1,0 @@
-#/usr/bin/env bash
-
-cd $HOME/$1
-ts=$(date +"%y%m%d")
-git add --all
-git commit -am "$ts $HOST"
-git $2

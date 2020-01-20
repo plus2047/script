@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "rename 's\/[\\t\\n]\/_\/' *",
-    "dontautoexpand" : true,
-    "uid" : "0D56BAE6-8F8D-4DA2-A449-427BE578AA87",
-    "name" : "remove new line in filename",
-    "keyword" : ""
-  }
-}

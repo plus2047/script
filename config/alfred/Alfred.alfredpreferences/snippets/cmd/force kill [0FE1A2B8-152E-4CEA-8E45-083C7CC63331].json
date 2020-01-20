@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "kill -9",
-    "dontautoexpand" : true,
-    "uid" : "0FE1A2B8-152E-4CEA-8E45-083C7CC63331",
-    "name" : "force kill",
-    "keyword" : "kill"
-  }
-}

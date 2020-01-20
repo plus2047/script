@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 ws:\/home\/plus ~\/wsfs",
-    "uid" : "371ABB56-1AF7-438A-8386-89C4BFA7E73D",
-    "name" : "sshfs mount",
-    "keyword" : "sshmount"
-  }
-}

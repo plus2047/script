@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "ax = plt.gca(projection=\"polar\")\nplt.plot(np.linspace(-np.pi, np.pi, 73), energy)",
-    "uid" : "F23A2024-338E-4363-A1AC-1BF2A624A6A6",
-    "name" : "plot: polar",
-    "keyword" : "polar"
-  }
-}

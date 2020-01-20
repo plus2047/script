@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "edit .zshrc, ZSH_THEME=\"ys\"",
-    "dontautoexpand" : true,
-    "uid" : "AB5CA7ED-D7F9-4372-B38E-2FBFCB75FE05",
-    "name" : "zsh recommand theme",
-    "keyword" : "zshtheme"
-  }
-}

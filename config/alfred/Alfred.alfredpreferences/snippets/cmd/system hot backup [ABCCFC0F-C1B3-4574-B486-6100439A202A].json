@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# backup\nrsync -aAXv --exclude={\"\/dev\/*\",\"\/proc\/*\",\"\/sys\/*\",\"\/tmp\/*\",\"\/run\/*\",\"\/mnt\/*\",\"\/media\/*\",\"\/lost+found\",\"\/home\/*\"} \/ \/home\/plus\/admin\/sys_backup\/2017.06.16_root\n# recover\nsudo rsync -aAXv \/home\/plus\/admin\/sys_backup\/2017.06.16_root \/\n",
-    "dontautoexpand" : true,
-    "uid" : "ABCCFC0F-C1B3-4574-B486-6100439A202A",
-    "name" : "system hot backup",
-    "keyword" : "sysbackup"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "import requests\nr = requests.get('https:\/\/www.github.com')\nprint(r.text)",
-    "uid" : "C00ACD32-0D59-4BC3-A66E-E83B33A366C5",
-    "name" : "python curl get",
-    "keyword" : "requests_curl"
-  }
-}

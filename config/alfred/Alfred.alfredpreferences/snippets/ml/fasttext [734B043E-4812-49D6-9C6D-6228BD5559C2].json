@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : ".\/fasttext supervised -input cooking.train -output model_cooking -lr 1.0 -epoch 25 -wordNgrams 2 -dim 100 -loss hs\n.\/fasttext test model_cooking.bin cooking.valid\n.\/fasttext predict model_cooking.bin -\n\n# https:\/\/fasttext.cc\/docs\/en\/supervised-tutorial.html",
-    "dontautoexpand" : true,
-    "uid" : "734B043E-4812-49D6-9C6D-6228BD5559C2",
-    "name" : "fasttext",
-    "keyword" : ""
-  }
-}

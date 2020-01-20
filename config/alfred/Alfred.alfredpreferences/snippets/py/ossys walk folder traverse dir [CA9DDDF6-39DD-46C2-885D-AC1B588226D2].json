@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "import os\n\n# traverse root directory, and list directories as dirs and files as files\nfor root, dirs, files in os.walk(\".\"):\n    path = root.split(os.sep)\n    print((len(path) - 1) * '---', os.path.basename(root))\n    for file in files:\n        print(len(path) * '---', file)",
-    "dontautoexpand" : true,
-    "uid" : "CA9DDDF6-39DD-46C2-885D-AC1B588226D2",
-    "name" : "os\/sys: walk folder \/ traverse dir",
-    "keyword" : ""
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "from tqdm import tqdm\nfor i in tqdm(range(100)):\n    pass\n",
-    "dontautoexpand" : true,
-    "uid" : "CB863CC7-69C4-49FB-BA76-CFC5D141570E",
-    "name" : "tqdm progress bar",
-    "keyword" : ""
-  }
-}

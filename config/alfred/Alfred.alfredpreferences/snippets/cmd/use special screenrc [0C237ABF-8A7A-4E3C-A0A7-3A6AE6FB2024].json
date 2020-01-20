@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "screen -c file ",
-    "uid" : "0C237ABF-8A7A-4E3C-A0A7-3A6AE6FB2024",
-    "name" : "use special screenrc",
-    "keyword" : "screenrc"
-  }
-}

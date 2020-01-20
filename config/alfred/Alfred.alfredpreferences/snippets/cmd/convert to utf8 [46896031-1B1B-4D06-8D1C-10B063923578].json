@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "#!\/bin\/bash\n \n# pip install chardet\necho processing: $1\n \nfor f in `ls $1`\ndo\n    echo file: $f\n    encoding=$(head -c 10240 $f | chardetect | awk '{print($2)}')                                      \n    echo encoding: $encoding\n    if [ $encoding != 'utf-8' -a $encoding != 'ascii' ]\n    then\n        iconv -f $encoding -t UTF-8\/\/IGNORE $f -o ${f}_utf8\n        mv ${f}_utf8 $f\n        echo transfered into utf-8, ignore error.\n    fi  \ndone\n",
-    "uid" : "46896031-1B1B-4D06-8D1C-10B063923578",
-    "name" : "convert to utf8",
-    "keyword" : "2utf8"
-  }
-}

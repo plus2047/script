@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "hardcopy [-h] [file]",
-    "dontautoexpand" : true,
-    "uid" : "DDA1510D-33B8-4CEC-96A2-E57A5F7A88AE",
-    "name" : "save screen current output",
-    "keyword" : ""
-  }
-}

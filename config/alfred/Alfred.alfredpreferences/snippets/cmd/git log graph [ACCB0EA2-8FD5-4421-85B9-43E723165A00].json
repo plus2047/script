@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "git log --graph --oneline",
-    "dontautoexpand" : true,
-    "uid" : "ACCB0EA2-8FD5-4421-85B9-43E723165A00",
-    "name" : "git log graph",
-    "keyword" : ""
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "from itertools import product\nfor n1, n2 in product(nums1, nums2):\n    print(n1,n2)\n",
-    "dontautoexpand" : true,
-    "uid" : "B892417B-87E5-477E-9E73-93D4581F1C04",
-    "name" : "lang: itertools product",
-    "keyword" : ""
-  }
-}

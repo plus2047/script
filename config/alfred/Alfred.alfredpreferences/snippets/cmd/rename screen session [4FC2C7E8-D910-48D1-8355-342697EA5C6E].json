@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "Prefix(Ctrl-a):sessionname [name]",
-    "dontautoexpand" : true,
-    "uid" : "4FC2C7E8-D910-48D1-8355-342697EA5C6E",
-    "name" : "rename screen session",
-    "keyword" : ""
-  }
-}

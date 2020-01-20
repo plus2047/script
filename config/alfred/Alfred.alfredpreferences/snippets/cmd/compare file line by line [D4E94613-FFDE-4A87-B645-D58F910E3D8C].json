@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "comm\n\nSelect or reject lines common to two files. Both files must be sorted.\n\n- Produce three tab-separated columns: lines only in first file, lines only in second file and common lines:\n    comm file1 file2\n\n- Print only lines common to both files:\n    comm -12 file1 file2\n\n- Print only lines common to both files, reading one file from stdin:\n    cat file1 | comm -12 - file2\n\n- Get lines only found in first file, saving the result to a third file:\n    comm -23 file1 file2 > file1_only\n\n- Print lines only found in second file, when the files aren't sorted:\n    comm -13 <(sort file1) <(sort file2)",
-    "uid" : "D4E94613-FFDE-4A87-B645-D58F910E3D8C",
-    "name" : "compare file line by line",
-    "keyword" : "comm"
-  }
-}

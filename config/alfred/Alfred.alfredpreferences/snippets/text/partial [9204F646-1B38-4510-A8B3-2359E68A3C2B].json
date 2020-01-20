@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "\\frac {\\partial} {\\partial}\n",
-    "uid" : "9204F646-1B38-4510-A8B3-2359E68A3C2B",
-    "name" : "partial",
-    "keyword" : "part"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# display a log file in real time\ntail -F filename",
-    "dontautoexpand" : true,
-    "uid" : "6BABD787-3DD5-4D18-BFB9-560187D55FA8",
-    "name" : "display log file in real time",
-    "keyword" : "tail"
-  }
-}

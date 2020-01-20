@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# ref: https:\/\/www.tutorialspoint.com\/svn\/svn_quick_guide.htm\n\nsvn checkout http:\/\/svn.server.com\/svn\/project_repo --username=tom\n# this will copy remove dir into local dir.\n\n# make some change in workdir.\nsvn add filename  # add new file\n# do codereview there !\n\nsvn status  # check status\nsvn diff  # check diff\n\nsvn commit -m \"message\"  # commit to REMOTE server.",
-    "dontautoexpand" : true,
-    "uid" : "199993B9-A4E6-4DB9-A9AC-BD25C5DE0E95",
-    "name" : "svn gist",
-    "keyword" : ""
-  }
-}

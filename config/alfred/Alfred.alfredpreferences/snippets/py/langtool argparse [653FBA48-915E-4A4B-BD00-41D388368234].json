@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "import argparse\n\nparser = argparse.ArgumentParser()\nparser.add_argument('-c', '--config', default=\"Nothing\")\nparser.add_argument('-n', '--number', default=0, type=int)\nparser.add_argument(\"--do-something\", default=False, action=\"store_true\" , help=\"Flag to do something\")\nargs = parser.parse_args()\n\nprint(args)\n",
-    "uid" : "653FBA48-915E-4A4B-BD00-41D388368234",
-    "name" : "langtool: argparse",
-    "keyword" : "arg"
-  }
-}

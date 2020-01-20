@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "cd \/git\/directory\nif [[ `git status --porcelain` ]]; then\n  # Changes\nelse\n  # No changes\nfi",
-    "dontautoexpand" : true,
-    "uid" : "93486189-AE1A-495A-8C96-A21D08E5B5F1",
-    "name" : "git if change",
-    "keyword" : ""
-  }
-}

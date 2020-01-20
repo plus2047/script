@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "lip=$(hostname -I)\nlip=${lip\/[ ]*\/}\n",
-    "uid" : "F3D37DCC-AE9D-4DF1-83CF-F4894864793B",
-    "name" : "get local ip",
-    "keyword" : "getip"
-  }
-}

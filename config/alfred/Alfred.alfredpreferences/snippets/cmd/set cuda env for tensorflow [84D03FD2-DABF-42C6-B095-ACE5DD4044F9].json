@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# set cuda env for tensorflow\nexport LD_LIBRARY_PATH=$LD_LIBRARY_PATH:\/usr\/local\/cuda-9.0\/lib64\nexport PATH=$PATH:\/usr\/local\/cuda-9.0\/bin\nexport CUDA_HOME=\/usr\/local\/cuda-9.0\n",
-    "dontautoexpand" : true,
-    "uid" : "84D03FD2-DABF-42C6-B095-ACE5DD4044F9",
-    "name" : "set cuda env for tensorflow",
-    "keyword" : "cudaenv4tf"
-  }
-}

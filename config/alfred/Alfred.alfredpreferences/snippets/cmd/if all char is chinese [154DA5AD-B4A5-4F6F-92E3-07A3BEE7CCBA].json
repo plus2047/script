@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "all(u'\\u4e00' <= c <= u'\\u9fff' for c in name.decode('utf-8'))",
-    "uid" : "154DA5AD-B4A5-4F6F-92E3-07A3BEE7CCBA",
-    "name" : "if all char is chinese",
-    "keyword" : "allchinese"
-  }
-}

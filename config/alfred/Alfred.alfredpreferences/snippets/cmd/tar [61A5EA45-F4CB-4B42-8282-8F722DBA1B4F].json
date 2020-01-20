@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# list tar file\ntar tvf filename.tar.xz\n\n# compress, auto detect suffix\n# BECAREFUL!!! DONOT RUN \n# tar caf file1 file2 ... compress.tar.xz\n# else file1 will be OVERWRITE!!!\ntar caf compress.tar.xz file1 file2 ...\n\n# decompress. auto detect suffix\ntar xaf compress.tar.xz",
-    "uid" : "61A5EA45-F4CB-4B42-8282-8F722DBA1B4F",
-    "name" : "tar",
-    "keyword" : "tar"
-  }
-}

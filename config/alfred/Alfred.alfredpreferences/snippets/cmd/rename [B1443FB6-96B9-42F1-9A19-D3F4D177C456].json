@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# add prefix `PRE_` to all files:\nrename 's\/^\/PRE_\/' *\n# replace all ` ` to `_`:\nrename 's\/ \/_\/g' *\n# trans all uppercase to lowercase:\nrename 'y\/A-Z\/a-z\/' *",
-    "dontautoexpand" : true,
-    "uid" : "B1443FB6-96B9-42F1-9A19-D3F4D177C456",
-    "name" : "rename",
-    "keyword" : "rename"
-  }
-}

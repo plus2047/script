@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# 查看目录占用，`-d 1`: 递归深度 1，`-h`: 以方便阅读的格式输出：\ndu -d 1 -h\n# 查看磁盘占用，方便阅读的格式输出：\ndf -h\n# 查看分区表：\nsudo fdisk -l",
-    "dontautoexpand" : true,
-    "uid" : "4FA44514-E551-440E-A4A1-E627421C6A6C",
-    "name" : "check folder & drives",
-    "keyword" : "dudf"
-  }
-}

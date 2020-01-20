@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "items = [1, 2, 3, 4, 5]\nsquared = []\nfor i in items:\n    squared.append(i**2)\n# replaced by:\nmap(function_to_apply, list_of_inputs)\n",
-    "dontautoexpand" : true,
-    "uid" : "12FE8BC6-6A70-422C-A41A-06485E79A38F",
-    "name" : "lang: functools map",
-    "keyword" : ""
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "shuf -n 1000 file",
-    "uid" : "291D5DB4-B849-4EB8-BBBB-50F2416A69B1",
-    "name" : "random sample",
-    "keyword" : "sample"
-  }
-}

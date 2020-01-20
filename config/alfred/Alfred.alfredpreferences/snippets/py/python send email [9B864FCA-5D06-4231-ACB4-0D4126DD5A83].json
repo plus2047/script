@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "import smtplib\nfrom email.mime.text import MIMEText\n\nTEMPLATE = \"\"\"%s\n\nThis mail send from a Python robot.\nIf any question, email to xjh_cn@yeah.net.\n\"\"\"\n\n\ndef send(to_list, sub, content, \n        mail_host=\"smtp.163.com\", mail_user=\"robot_2018\", mail_pass=\"robot2018\",\n        mail_postfix=\"163.com\", template=TEMPLATE):\n    me = \"alice\" + \"<\" + mail_user + \"@\" + mail_postfix + \">\"\n    msg = MIMEText(template % content, _subtype='plain')\n    msg['Subject'], msg['From'], msg['To'] = sub, me, \";\".join(to_list)\n    try:\n        server = smtplib.SMTP()\n        server.connect(mail_host)\n        server.login(mail_user, mail_pass)\n        server.sendmail(me, to_list, msg.as_string())\n        server.close()\n        return True\n    except Exception as e:\n        print(str(e))\n        return False\n\n\nif __name__ == \"__main__\":\n    mailto_list = ['xjh_cn@yeah.net']\n    send(mailto_list, \"Check Auto Email\", \"All is well.\"):\n",
-    "dontautoexpand" : true,
-    "uid" : "9B864FCA-5D06-4231-ACB4-0D4126DD5A83",
-    "name" : "python send email",
-    "keyword" : ""
-  }
-}

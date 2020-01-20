@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : " rsync -azvPr --filter=':- .gitignore' --exclude '.git' . ava1:fastscore\/recopp",
-    "uid" : "940F135E-126E-4583-8563-F82B41C9AAD4",
-    "name" : "rsyncgit",
-    "keyword" : "rsyncgit"
-  }
-}

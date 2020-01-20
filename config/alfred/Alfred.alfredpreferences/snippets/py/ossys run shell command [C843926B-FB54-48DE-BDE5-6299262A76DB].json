@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "try:\n    diff = subprocess.check_output([\"git\", \"diff\", \"-U10000\", args.first_commit, args.second_commit, xml_file],\n        cwd=xml_dir, stderr=subprocess.STDOUT).decode(\"utf-8\")\nexcept subprocess.CalledProcessError as error:\n    print(error.output)",
-    "uid" : "C843926B-FB54-48DE-BDE5-6299262A76DB",
-    "name" : "os\/sys: run shell command",
-    "keyword" : "runsh"
-  }
-}

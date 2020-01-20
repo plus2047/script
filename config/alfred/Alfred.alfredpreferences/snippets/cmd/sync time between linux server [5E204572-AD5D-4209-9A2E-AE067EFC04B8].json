@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# synchronize date and time with a server over ssh\ndate --set=\"$(ssh user@server date)\"\n# or you can do it the other way around:\nssh user@host \"date --set \\\"$(date)\\\"\"\n",
-    "dontautoexpand" : true,
-    "uid" : "5E204572-AD5D-4209-9A2E-AE067EFC04B8",
-    "name" : "sync time between linux server",
-    "keyword" : "synctime"
-  }
-}

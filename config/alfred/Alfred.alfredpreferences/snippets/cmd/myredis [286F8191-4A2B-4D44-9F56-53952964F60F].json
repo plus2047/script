@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "echo get ec_ss:134292688 | redis-cli -h avaapcache11 -p 15558",
-    "dontautoexpand" : true,
-    "uid" : "286F8191-4A2B-4D44-9F56-53952964F60F",
-    "name" : "myredis",
-    "keyword" : ""
-  }
-}

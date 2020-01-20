@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "`.",
-    "dontautoexpand" : true,
-    "uid" : "DB37D33A-4FC1-463D-8DA5-96C2E8D0A106",
-    "name" : "vim: jump to the location of last edit",
-    "keyword" : ""
-  }
-}

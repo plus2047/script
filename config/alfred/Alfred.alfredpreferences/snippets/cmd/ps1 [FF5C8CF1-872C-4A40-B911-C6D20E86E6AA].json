@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "PS1='\\[\\e[31m\\][ alpha @ \\w ]\\$\\[\\e[m\\] '\nPS1='${PWD#\"${PWD%\/*\/*}\/\"} \\$ '",
-    "dontautoexpand" : true,
-    "uid" : "FF5C8CF1-872C-4A40-B911-C6D20E86E6AA",
-    "name" : "ps1",
-    "keyword" : "ps1"
-  }
-}

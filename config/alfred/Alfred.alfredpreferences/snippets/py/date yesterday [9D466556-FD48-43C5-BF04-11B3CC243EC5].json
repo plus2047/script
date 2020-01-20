@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "from datetime import date, timedelta\n(date.today() - timedelta(1)).strftime(\"20%y%m%d\")",
-    "dontautoexpand" : true,
-    "uid" : "9D466556-FD48-43C5-BF04-11B3CC243EC5",
-    "name" : "date: yesterday",
-    "keyword" : ""
-  }
-}

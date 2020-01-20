@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "git submodule update --init --recursive",
-    "uid" : "26D24A1B-24DB-45DB-A7B1-AF9C7210D99F",
-    "name" : "git submodule init",
-    "keyword" : "gitsubinit"
-  }
-}
