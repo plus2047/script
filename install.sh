@@ -73,5 +73,5 @@ function user_check {
 script_dir=$(dirname $0)
 script_dir=$(realpath $script_dir)
 
-link_to $script_dir/screenrc $HOME/.screenrc
-link_to $script_dir/vimrc $HOME/.vimrc
+# link_to $script_dir/screenrc $HOME/.screenrc
+# link_to $script_dir/vimrc $HOME/.vimrc
