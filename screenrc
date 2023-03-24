@@ -30,5 +30,5 @@ caption always
 bind 'K' kill
 bind 'W' windowlist
 
-shell /bin/zsh
+# shell /bin/zsh
 screen 1
