@@ -24,19 +24,20 @@ hk.bind(hyper, 'v', function()
     hs.mouse.absolutePosition(center)
 end)
 
--- windows switcher
-windowFilter = hs.window.filter.new()
-windowFilter:setCurrentSpace(true)
-switcher = hs.window.switcher.new(windowFilter)
-hs.window.switcher.ui.showSelectedThumbnail = false
-hs.window.switcher.ui.showSelectedTitle = false
-hk.bind("alt",'tab', function()switcher:next()end)
-hk.bind('alt-shift','tab',function()switcher:previous()end)
+-- -- windows switcher
+-- windowFilter = hs.window.filter.new()
+-- windowFilter:setCurrentSpace(true)
+-- switcher = hs.window.switcher.new(windowFilter)
+-- hs.window.switcher.ui.showSelectedThumbnail = false
+-- hs.window.switcher.ui.showSelectedTitle = false
+-- hk.bind("alt",'tab', function()switcher:next()end)
+-- hk.bind('alt-shift','tab',function()switcher:previous()end)
 
 -- clipboard tool
 hs.loadSpoon("ClipboardTool")
 spoon.ClipboardTool:bindHotkeys({toggle_clipboard = {hyper, "c"}})
 spoon.ClipboardTool.show_in_menubar = false
+spoon.ClipboardTool.show_copied_alert = false
 spoon.ClipboardTool:start()
 
 -- app shortcut
