@@ -26,7 +26,6 @@ end)
 -- app shortcut
 hs.hotkey.bind(hyper, "z", function() hs.application.launchOrFocus("Google Chrome") end)
 hs.hotkey.bind(hyper, "x", function() hs.application.launchOrFocus("Visual Studio Code") end)
-hs.hotkey.bind(hyper, "b", function() hs.application.launchOrFocus("Microsoft Edge") end)
 hs.hotkey.bind(hyper, "v", function() hs.application.launchOrFocus("Dictionary") end)
 hs.hotkey.bind(hyper, "l", function() hs.application.launchOrFocus("Lark") end)
 hs.hotkey.bind(hyper, "t", function() hs.application.launchOrFocus("Microsoft To Do") end)
