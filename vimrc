@@ -1,15 +1,10 @@
 " :help 'opintion' for explaining
 
-syntax on
-filetype on
-filetype plugin on
-filetype indent on
-set noeb
-set history=512
-
 " appearance
 " ==========
 
+set noeb
+set history=512
 set wildmenu
 set wildmode=longest,full
 set showcmd
@@ -48,6 +43,11 @@ set cursorline
 " file read/write
 " ===============
  
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
 set encoding=utf-8
 set termencoding=utf-8
 set fileencodings=utf-8,gbk,gb18030,gb2312
@@ -84,7 +84,8 @@ endfunction
 set completeopt=longest,menuone
 inoremap <expr> <tab> InsertTabWrapper()
 
-" persional shortcuts ==========
+" persional shortcuts
+" ===================
 
 " inoremap jj <esc><esc>
 inoremap <C-e> <C-o>$
@@ -101,4 +102,15 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
+
+" file explorer
+" =============
+" open the netrw file explorer with :Vex
+" :help g:netrw_* to read help
+
+let g:netrw_banner=0
+let g:netrw_winsize=20
+let g:netrw_liststyle=3
+let g:netrw_browse_split=4
+
 
