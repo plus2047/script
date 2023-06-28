@@ -88,11 +88,12 @@ inoremap <expr> <tab> InsertTabWrapper()
 " ===================
 
 " inoremap jj <esc><esc>
+" tnoremap <Esc> <C-\><C-n>
+
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
 
 nnoremap <cr> :
-tnoremap <Esc> <C-\><C-n>
 
 let mapleader = " "
 nnoremap <leader><cr> :noh<cr>
