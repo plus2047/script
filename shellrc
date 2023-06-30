@@ -16,6 +16,30 @@
 # LC_IDENTIFICATION="en_US.UTF-8"
 # LC_ALL="en_US.UTF-8"
 
+# # usage: `proxy proxy_port` or `proxy unset`
+# function proxy {
+#     if [ ! -z $1 ]
+#     then
+#         if [ $1 = 'unset' ]
+#         then
+#             unset HTTP_PROXY
+#             unset HTTPS_PROXY
+#             unset http_proxy
+#             unset https_proxy
+#             unset ALL_PROXY
+#         else
+#             export HTTP_PROXY=http://localhost:$1
+#             export HTTPS_PROXY=$HTTP_PROXY
+#             export http_proxy=$HTTP_PROXY
+#             export https_proxy=$HTTP_PROXY
+#             if [ -n "$2" ]
+#             then
+#                 export ALL_PROXY=socks5://localhost:$2
+#             fi
+#         fi
+#     fi
+# }
+
 # # trash system ========
 # trash_path=$HOME/.Trash/
 # if [ ! -d $trash_path ]; then
@@ -34,7 +58,6 @@
 #     done
 # }
 # alias rm=trash
-# # ========
 
 # # if ssh in, open screen.
 # if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
@@ -47,3 +70,10 @@
 # # oh-my-bash theme
 # OSH_THEME="pzq"
 
+# # install rg
+# brew install rg
+# conda install -c anaconda ripgrep
+
+# # install fzf
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install

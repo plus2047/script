@@ -8,7 +8,7 @@ defscrollback 80000
 vbell off
 
 # replace C- escape sequence, default: escape ^Aa
-escape ``             
+escape ``
 
 # Window numbering starts at 1
 bind c screen 1
