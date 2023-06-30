@@ -1,7 +1,6 @@
-" :help 'opintion' for explaining
-
+"
 " appearance
-" ==========
+"
 
 set noeb
 set history=512
@@ -31,17 +30,16 @@ set shiftwidth=4
 
 set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [POS=%l,%v][%p%%]
 set laststatus=2
+set cursorline
 
-set nofoldenable
+" set nofoldenable
 " set foldmethod=indent   
 " set foldnestmax=10
 " set foldlevel=2
 
-" highlight the cursor line
-set cursorline
- 
+"
 " file read/write
-" ===============
+"
  
 syntax on
 filetype on
@@ -61,12 +59,6 @@ set autowriteall
 set clipboard+=unnamed
 set autoread
 
-" autoreload vimrc after it change, may not work if it's a soft-link.
-" autocmd! bufwritepost .vimrc source %
-
-" sudo saves the file 
-" nnoremap <leader>W :!sudo tee % > /dev/null
-
 " jump to the last position when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -85,11 +77,9 @@ endfunction
 set completeopt=longest,menuone
 inoremap <expr> <tab> InsertTabWrapper()
 
+"
 " persional shortcuts
-" ===================
-
-" inoremap jj <esc><esc>
-" tnoremap <Esc> <C-\><C-n>
+"
 
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
@@ -105,19 +95,21 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
+"
 " file explorer
-" =============
-" open the netrw file explorer with :Vex
-" :help g:netrw_* to read help
-" `enter` to open folder, `shift+enter` to close
+"
+
+" Open the netrw file explorer with :Vex
+" Enter to open folder, shift+enter to close
 
 let g:netrw_banner=0
 let g:netrw_winsize=20
 let g:netrw_liststyle=3
 let g:netrw_browse_split=4
 
+"
 " vim-plug
-" ========
+"
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -137,3 +129,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'jayli/vim-easycomplete'
   endif
 call plug#end()
+
+" :help 'opintion' for explaining
+
+" autoreload vimrc after it change, may not work if it's a soft-link.
+" autocmd! bufwritepost .vimrc source %
+
+" sudo saves the file 
+" nnoremap <leader>W :!sudo tee % > /dev/null
+
