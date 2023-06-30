@@ -109,6 +109,7 @@ nnoremap <leader>l <C-w>l
 " =============
 " open the netrw file explorer with :Vex
 " :help g:netrw_* to read help
+" `enter` to open folder, `shift+enter` to close
 
 let g:netrw_banner=0
 let g:netrw_winsize=20
@@ -116,6 +117,8 @@ let g:netrw_liststyle=3
 let g:netrw_browse_split=4
 
 " vim-plug
+" ========
+
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -130,4 +133,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  if v:version >= 802
+    Plug 'jayli/vim-easycomplete'
+  endif
 call plug#end()
