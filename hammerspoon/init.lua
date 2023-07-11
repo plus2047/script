@@ -27,8 +27,8 @@ end)
 hs.hotkey.bind(hyper, "z", function() hs.application.launchOrFocus("Google Chrome") end)
 hs.hotkey.bind(hyper, "x", function() hs.application.launchOrFocus("Visual Studio Code") end)
 hs.hotkey.bind(hyper, "v", function() hs.application.launchOrFocus("Dictionary") end)
-hs.hotkey.bind(hyper, "l", function() hs.application.launchOrFocus("Lark") end)
-hs.hotkey.bind(hyper, "t", function() hs.application.launchOrFocus("Microsoft To Do") end)
+hs.hotkey.bind(hyper, "m", function() hs.application.launchOrFocus("Lark") end)
+hs.hotkey.bind(hyper, "n", function() hs.application.launchOrFocus("Microsoft To Do") end)
 
 -- Raycast to replace spotlight
 -- Alt+C for clipboard history
