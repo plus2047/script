@@ -1,79 +1,17 @@
-# export PATH="$HOME/script:$PATH"
-
-# LANG="en_US.UTF-8"
-# LANGUAGE="en_US.UTF-8"
-# LC_CTYPE="en_US.UTF-8"
-# LC_NUMERIC="en_US.UTF-8"
-# LC_TIME="en_US.UTF-8"
-# LC_COLLATE="en_US.UTF-8"
-# LC_MONETARY="en_US.UTF-8"
-# LC_MESSAGES="en_US.UTF-8"
-# LC_PAPER="en_US.UTF-8"
-# LC_NAME="en_US.UTF-8"
-# LC_ADDRESS="en_US.UTF-8"
-# LC_TELEPHONE="en_US.UTF-8"
-# LC_MEASUREMENT="en_US.UTF-8"
-# LC_IDENTIFICATION="en_US.UTF-8"
-# LC_ALL="en_US.UTF-8"
-
-# # usage: `proxy proxy_port` or `proxy unset`
-# function proxy {
-#     if [ ! -z $1 ]
-#     then
-#         if [ $1 = 'unset' ]
-#         then
-#             unset HTTP_PROXY
-#             unset HTTPS_PROXY
-#             unset http_proxy
-#             unset https_proxy
-#             unset ALL_PROXY
-#         else
-#             export HTTP_PROXY=http://localhost:$1
-#             export HTTPS_PROXY=$HTTP_PROXY
-#             export http_proxy=$HTTP_PROXY
-#             export https_proxy=$HTTP_PROXY
-#             if [ -n "$2" ]
-#             then
-#                 export ALL_PROXY=socks5://localhost:$2
-#             fi
-#         fi
-#     fi
-# }
-
-# # trash system ========
-# trash_path=$HOME/.Trash/
-# if [ ! -d $trash_path ]; then
-#     mkdir -p $trash_path
-# fi
-# trash() {
-#     _TS=`date +"_%y%m%d_%H%M%S"`
-#     for file in $@
-#     do    
-#         f=$(basename ${file})
-#         if [ "${f:0:1}" = '.' ]
-#         then
-#             f=${f:1}
-#         fi
-#         mv ${file} ${trash_path}${f}${_TS}
-#     done
-# }
-# alias rm=trash
-
-# # if ssh in, open screen.
+# # ssh screen
+# # ===
 # if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] ; then
 #     if [ -z "$STY" ]; then screen -R -d; fi
 # fi
 
-# # oh-my-zsh theme
-# ZSH_THEME="ys"
-
-# # oh-my-bash theme
-# OSH_THEME="pzq"
-
-# # install rg
+# # ripgrep 
+# # ===
 # brew install rg
 # conda install -c anaconda ripgrep
 
-# # install fzf
+# # fzf
+# # ===
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # ~/.fzf/install
+
+
