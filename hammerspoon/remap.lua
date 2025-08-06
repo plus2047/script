@@ -87,22 +87,25 @@ builtInMaps = {
 -- EXTERNAL KEYBOARD MAPPINGS (Type 46)
 -- ========================================
 
--- externalMaps = {
---     keyboardTypeRemap(nil, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
---     function() hs.eventtap.keyStroke({}, "escape", 100) end):start(),
+externalMaps = {
+    keyboardTypeRemap(nil, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStroke({}, "escape", 100) end):start(),
 
---     keyboardTypeRemap({"alt"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
---     function() hs.eventtap.keyStrokes("`") end):start(),
+    keyboardTypeRemap({"alt"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStrokes("`") end):start(),
 
---     keyboardTypeRemap({"ctrl"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
---     function() hs.eventtap.keyStroke({"ctrl"}, "`", 100) end):start(),
+    keyboardTypeRemap({"ctrl"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStroke({"ctrl"}, "`", 100) end):start(),
 
---     keyboardTypeRemap({"cmd"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
---     function() hs.eventtap.keyStroke({"cmd"}, "`", 100) end):start(),
+    keyboardTypeRemap({"cmd"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStroke({"cmd"}, "`", 100) end):start(),
 
---     keyboardTypeRemap({"shift"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
---     function() hs.eventtap.keyStrokes("~") end):start(),
+    keyboardTypeRemap({"shift"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStrokes("~") end):start(),
 
---     keyboardTypeRemap(nil, BACKTICK_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
---     function() hs.eventtap.keyStroke({"alt"}, "delete", 100) end):start()
--- }
+    keyboardTypeRemap({"alt", "shift"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStroke({"shift"}, "escape", 100) end):start(),
+
+    keyboardTypeRemap(nil, BACKTICK_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    function() hs.eventtap.keyStroke({"alt"}, "delete", 100) end):start()
+}
