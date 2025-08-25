@@ -106,6 +106,61 @@ externalMaps = {
     keyboardTypeRemap({"alt", "shift"}, ESCAPE_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
     function() hs.eventtap.keyStroke({"shift"}, "escape", 100) end):start(),
 
-    keyboardTypeRemap(nil, BACKTICK_KEY_CODE, EXTERNAL_KEYBOARD_TYPE, 
+    keyboardTypeRemap(nil, BACKTICK_KEY_CODE, EXTERNAL_KEYBOARD_TYPE,
     function() hs.eventtap.keyStroke({"alt"}, "delete", 100) end):start()
 }
+
+-- ========================================
+-- LEFT SHIFT TO CAPS LOCK (ALL KEYBOARDS)
+-- ========================================
+
+
+-- Function to handle left shift pressed alone -> caps lock
+local function leftShiftToCapsLock()
+    local shiftPressed = false
+    local shiftPressTime = 0
+    local otherKeyPressed = false
+
+    return hs.eventtap.new({
+        hs.eventtap.event.types.keyDown,
+        hs.eventtap.event.types.keyUp,
+        hs.eventtap.event.types.flagsChanged
+    }, function(event)
+        local eventType = event:getType()
+
+        -- Check if left shift flag changed using raw flags
+        local rawFlags = event:rawFlags()
+        local leftShiftFlag = hs.eventtap.event.rawFlagMasks.deviceLeftShift
+        local leftShiftPressed = (rawFlags & leftShiftFlag) ~= 0
+
+        if eventType == hs.eventtap.event.types.flagsChanged then
+            if leftShiftPressed and not shiftPressed then
+                -- Left shift pressed down
+                shiftPressed = true
+                shiftPressTime = hs.timer.absoluteTime()
+                otherKeyPressed = false
+            elseif not leftShiftPressed and shiftPressed then
+                -- Left shift released
+                local pressDuration = (hs.timer.absoluteTime() - shiftPressTime)
+                if not otherKeyPressed and pressDuration < 0.5 * 1E9 then
+                    hs.eventtap.event.newSystemKeyEvent("CAPS_LOCK", true):post()
+                    hs.eventtap.event.newSystemKeyEvent("CAPS_LOCK", false):post()
+                end
+                shiftPressed = false
+                otherKeyPressed = false
+            end
+        elseif (
+            eventType == hs.eventtap.event.types.keyDown or 
+            eventType == hs.eventtap.event.types.keyUp
+        ) then
+            if shiftPressed and leftShiftPressed then
+                otherKeyPressed = true
+            end
+        end
+
+        return false -- Don't consume the event, let it pass through
+    end)
+end
+
+-- Start the left shift to caps lock eventtap
+leftShiftToCapsLockTap = leftShiftToCapsLock():start()
