@@ -1,6 +1,7 @@
 hyper = {"alt"}
 hs.hotkey.bind(hyper, ',', nil, function() hs.reload() end)
 require("remap")
+require("auto-mouse-focus")
 
 -- window management
 local hk = require("hs.hotkey")
@@ -25,7 +26,7 @@ end)
 
 -- app shortcut
 hs.hotkey.bind(hyper, "z", function() hs.application.launchOrFocus("Google Chrome") end)
-hs.hotkey.bind(hyper, "x", function() hs.application.launchOrFocus("Code") end)
+hs.hotkey.bind(hyper, "x", function() hs.application.launchOrFocus("Visual Studio Code") end)
 hs.hotkey.bind(hyper, "m", function() hs.application.launchOrFocus("Slack") end)
 -- hs.hotkey.bind(hyper, "n", function() hs.application.launchOrFocus("Microsoft To Do") end)
 -- hs.hotkey.bind(hyper, "/", function() hs.application.launchOrFocus("WeChat") end)
