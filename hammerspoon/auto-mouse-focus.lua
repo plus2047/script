@@ -10,7 +10,7 @@ local module = {}
 local config = {
     enabled = true,
     -- Delay before moving mouse (in seconds) to avoid conflicts with rapid window switching
-    delay = 0.1,
+    delay = 0.3,
     -- Minimum window size to trigger mouse movement (to avoid tiny windows)
     minWindowWidth = 100,
     minWindowHeight = 100,
