@@ -9,13 +9,9 @@ local module = {}
 -- Configuration
 local config = {
     enabled = true,
-    -- Delay before moving mouse (in seconds) to avoid conflicts with rapid window switching
-    delay = 0.3,
-    -- Minimum window size to trigger mouse movement (to avoid tiny windows)
+    delay = 0.2,  -- Delay before moving mouse (in seconds)
     minWindowWidth = 100,
-    minWindowHeight = 100,
-    -- Debug mode - set to true to see alerts when mouse is moved
-    debug = false
+    minWindowHeight = 100
 }
 
 -- Global variables
@@ -29,70 +25,60 @@ local moveTimer = nil
 -- Check if mouse is within window bounds
 local function isMouseInWindow(window)
     if not window then return false end
-    
+
     local mousePos = hs.mouse.absolutePosition()
     local windowFrame = window:frame()
-    
-    return mousePos.x >= windowFrame.x and 
+
+    return mousePos.x >= windowFrame.x and
            mousePos.x <= windowFrame.x + windowFrame.w and
-           mousePos.y >= windowFrame.y and 
+           mousePos.y >= windowFrame.y and
            mousePos.y <= windowFrame.y + windowFrame.h
 end
 
 -- Move mouse to center of window
 local function moveMouseToWindowCenter(window)
     if not window then return end
-    
+
     local windowFrame = window:frame()
-    
+
     -- Check minimum window size
     if windowFrame.w < config.minWindowWidth or windowFrame.h < config.minWindowHeight then
-        if config.debug then
-            hs.alert.show("Window too small, skipping mouse move")
-        end
         return
     end
-    
-    -- Calculate center point
-    local centerPoint = hs.geometry.rectMidPoint(windowFrame)
-    
+
     -- Move mouse to center
-    hs.mouse.absolutePosition(centerPoint)
-    
-    if config.debug then
-        hs.alert.show("Mouse moved to window center")
-    end
+    hs.mouse.absolutePosition(hs.geometry.rectMidPoint(windowFrame))
 end
 
 -- ========================================
 -- MAIN FUNCTIONALITY
 -- ========================================
 
--- Handle window focus events
+-- Handle window focus/created events
 local function onWindowFocused(window, appName, event)
     if not config.enabled then return end
     if not window then return end
-    
+
     -- Cancel any pending mouse movement
     if moveTimer then
         moveTimer:stop()
         moveTimer = nil
     end
-    
+
+    -- Get a fresh window object to avoid stale references
+    local freshWindow = hs.window.focusedWindow()
+    if not freshWindow then return end
+
     -- Check if mouse is already in the window
-    if isMouseInWindow(window) then
-        if config.debug then
-            hs.alert.show("Mouse already in window")
-        end
-        return
-    end
-    
+    if isMouseInWindow(freshWindow) then return end
+
+    local windowId = window:id()
+
     -- Schedule mouse movement with a small delay
     moveTimer = hs.timer.doAfter(config.delay, function()
-        -- Double-check that the window is still focused
         local currentWindow = hs.window.focusedWindow()
-        if currentWindow and currentWindow:id() == window:id() then
-            moveMouseToWindowCenter(window)
+        if currentWindow and currentWindow:id() == windowId then
+            moveMouseToWindowCenter(currentWindow)
         end
         moveTimer = nil
     end)
@@ -107,16 +93,10 @@ function module.start()
     if windowFilter then
         module.stop()
     end
-    
-    -- Create window filter for all windows
+
     windowFilter = hs.window.filter.new()
-    
-    -- Subscribe to window focused events
+    windowFilter:subscribe(hs.window.filter.windowCreated, onWindowFocused)
     windowFilter:subscribe(hs.window.filter.windowFocused, onWindowFocused)
-    
-    if config.debug then
-        hs.alert.show("Auto mouse focus started")
-    end
 end
 
 -- Stop the auto mouse focus feature
@@ -125,47 +105,18 @@ function module.stop()
         windowFilter:unsubscribe()
         windowFilter = nil
     end
-    
+
     if moveTimer then
         moveTimer:stop()
         moveTimer = nil
     end
-    
-    if config.debug then
-        hs.alert.show("Auto mouse focus stopped")
-    end
 end
 
--- Enable/disable the feature
+-- Toggle the feature
 function module.toggle()
     config.enabled = not config.enabled
-    
-    local status = config.enabled and "enabled" or "disabled"
-    hs.alert.show("Auto mouse focus " .. status)
+    hs.alert.show("Auto mouse focus " .. (config.enabled and "enabled" or "disabled"))
 end
-
--- Configure the module
-function module.configure(newConfig)
-    for key, value in pairs(newConfig) do
-        if config[key] ~= nil then
-            config[key] = value
-        end
-    end
-end
-
--- Get current configuration
-function module.getConfig()
-    return config
-end
-
--- Check if feature is enabled
-function module.isEnabled()
-    return config.enabled
-end
-
--- ========================================
--- INITIALIZATION
--- ========================================
 
 -- Auto-start the feature when module is loaded
 module.start()
